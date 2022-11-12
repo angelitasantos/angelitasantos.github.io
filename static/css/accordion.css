@@ -1,0 +1,51 @@
+.accordion-container {
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 4px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    width: 100%;
+    background: #18453B;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #003300;
+    color: #f3f3f3;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.accordion-header.active {
+    background: linear-gradient(-45deg, #18493e, #18493e, #18493e, #18493e);
+}
+
+.accordion-header i {
+    transition: all 0.3s ease-in-out;
+}
+
+.accordion-header.active i {
+    transform: rotate(180deg);
+}
+
+.accordion-body {
+    padding: 0 1rem;
+    background-color: #c9fff3;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.accordion-body.active {
+    max-height: 10rem;
+    padding: 1rem;
+}
+
+.accordion-item strong {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}

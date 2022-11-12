@@ -17,6 +17,9 @@
 
     <link rel="stylesheet" href="static/css/responsive.css">
     <link rel="stylesheet" href="static/css/header.css">
+    <link rel="stylesheet" href="static/css/accordion.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
         rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
@@ -61,7 +64,78 @@
 
     </header>
 
+    <main data-js="accordion" class="container mt-5 mb-5 accordion-container">
+
+        <section class="accordion-item">
+            <button data-accordion-header="1" data-js="accordion-header" class="accordion-header">
+                <strong data-accordion-header="1">Skills</strong>
+                <i data-accordion-header="1" class="fas fa-angle-down"></i>
+            </button>
+
+            <div data-accordion-body="1" class="accordion-body">
+                texto
+            </div>
+        </section>
+    
+        <section class="accordion-item">
+            <button data-accordion-header="2" data-js="accordion-header" class="accordion-header">
+                <strong data-accordion-header="2">Experiência Profissional</strong>
+                <i data-accordion-header="2" class="fas fa-angle-down"></i>
+            </button>
+
+            <div data-accordion-body="2" class="accordion-body">
+                texto
+            </div>
+        </section>
+
+        <section class="accordion-item">
+            <button data-accordion-header="3" data-js="accordion-header" class="accordion-header">
+                <strong data-accordion-header="3" >Formação Acadêmica</strong>
+                <i data-accordion-header="3" class="fas fa-angle-down"></i>
+            </button>
+
+            <div data-accordion-body="3" class="accordion-body">
+                texto
+            </div>
+        </section>
+
+        <section class="accordion-item">
+            <button data-accordion-header="4" data-js="accordion-header" class="accordion-header">
+                <strong data-accordion-header="4">Portfólio</strong>
+                <i data-accordion-header="4" class="fas fa-angle-down"></i>
+            </button>
+
+            <div data-accordion-body="4" class="accordion-body">
+                texto
+            </div>
+        </section>
+
+        <section class="accordion-item">
+            <button data-accordion-header="5" data-js="accordion-header" class="accordion-header">
+                <strong data-accordion-header="5">Cursos e Linguas</strong>
+                <i data-accordion-header="5" class="fas fa-angle-down"></i>
+            </button>
+
+            <div data-accordion-body="5" class="accordion-body">
+                texto
+            </div>
+        </section>
+
+        <section class="accordion-item">
+            <button data-accordion-header="6" data-js="accordion-header" class="accordion-header">
+                <strong data-accordion-header="6">Hobbies</strong>
+                <i data-accordion-header="6" class="fas fa-angle-down"></i>
+            </button>
+
+            <div data-accordion-body="6" class="accordion-body">
+                texto
+            </div>
+        </section>
+
+    </main>
+
     <script type="text/javascript" src="static/js/text.js"></script>
+    <script type="text/javascript" src="static/js/accordion.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" 
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" 
