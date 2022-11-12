@@ -1,11 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Personal Website">
+    <meta name="author" content="Angelita Santos">
+    <meta name="keyWords" content="website, personal">
+    <meta name="robots" content="index, follow">
+    <meta name="classification" content="site, personal, website">
+
     <title>Angelita Santos</title>
+
     <link rel="shortcut icon" href="static/img/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="static/css/responsive.css">
+    <link rel="stylesheet" href="static/css/header.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
         rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
@@ -15,12 +26,43 @@
         crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Angelita Santos</h1>
+    
+    <header class="header-wrapper">
+
+        <section class="checkbox-container">
+            <input type="checkbox" id="toggle">
+            <label class="checkbox" for="toggle">
+                <div class="trace"></div>
+                <div class="trace"></div>
+                <div class="trace"></div>
+            </label>
+            <div class="menu"></div>
+            <nav class="menu-items">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="https://www.linkedin.com/in/angelitasantos/" target="_blank">Sobre</a></li>
+                    <li><a href="https://github.com/angelitasantos" target="_blank">Projetos</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <h1 id="name"></h1>
+        <h2 id="name-function"></h2>
+        <section class="social-media">
+            <a href="https://www.linkedin.com/in/angelitasantos/" target="_blank">Linkedin</a>
+            <a href="https://github.com/angelitasantos" target="_blank">Github</a>
+        </section>
+
+    </header>
+
+    <script type="text/javascript" src="static/js/text.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" 
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" 
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" 
         integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" 
         crossorigin="anonymous"></script>
+
 </body>
 </html>
