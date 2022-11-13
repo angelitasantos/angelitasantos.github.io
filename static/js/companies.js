@@ -34,7 +34,7 @@ companyJson.map(function (item, index) {
     dqS('.company-area').append(companyItem);
 });
 
-dqSA('.company-info--cancelButton').forEach(
+dqSA('.company-info--button').forEach(
     function (item) {
         item.addEventListener('click', closeModal)
     }

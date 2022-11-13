@@ -64,15 +64,14 @@
 }
 
 .company-item--name {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
     color: #003300;
     margin-top: 5px;
 }
 
-.company-item--desc,
-.company-item--res {
-    font-size: 13px;
+.company-item--desc {
+    font-size: 16px;
     color: #18493e;
     margin-top: 1px;
 }
@@ -111,14 +110,13 @@
     margin-top: 50px;
 }
 
-.company-info .company-info--desc {
-    font-size: 15px;
+.company-info .company-info--res, .company-info .company-info--desc {
+    font-size: 18px;
     color: #003300;
     margin-top: 10px;
-    font-family: 'Lato', Helvetica, Arial;
 }
 
-.company-info--cancelButton {
+.company-info--button {
     width: 200px;
     height: 50px;
     margin-top: 10px;
