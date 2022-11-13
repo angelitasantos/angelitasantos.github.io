@@ -167,43 +167,44 @@
             </button>
 
             <div data-accordion-body="3" class="accordion-body">
+
                 <div class="card text-center">
                     <div class="card-header">
                         <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" 
-                                    type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Especialização</button>
+                                <button class="nav-link active" id="especializacao-tab" data-bs-toggle="tab" data-bs-target="#especializacao-tab-pane" 
+                                    type="button" role="tab" aria-controls="especializacao-tab-pane" aria-selected="true">Especialização</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" 
-                                type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Graduação</button>
+                                <button class="nav-link" id="graduacao-tab" data-bs-toggle="tab" data-bs-target="#graduacao-tab-pane" 
+                                type="button" role="tab" aria-controls="graduacao-tab-pane" aria-selected="false">Graduação</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" 
-                                type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Técnico</button>
+                                <button class="nav-link" id="tecnico-tab" data-bs-toggle="tab" data-bs-target="#tecnico-tab-pane" 
+                                type="button" role="tab" aria-controls="tecnico-tab-pane" aria-selected="false">Técnico</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" 
-                                type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">Cursos</button>
+                                <button class="nav-link" id="cursos-tab" data-bs-toggle="tab" data-bs-target="#cursos-tab-pane" 
+                                type="button" role="tab" aria-controls="cursos-tab-pane" aria-selected="false">Cursos</button>
                             </li>
                         </ul>
                         <div class="tab-content mb-5" id="myTabContent">
-                            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                            <div class="tab-pane fade show active" id="especializacao-tab-pane" role="tabpanel" aria-labelledby="especializacao-tab" tabindex="0">
                                 <h4 class="mt-5">Curso: Gestão de Projetos com ênfase em Custos</h4>
                                 <h4>Instituição: IETEC</h4>
                                 <h4>Concluı́do em 2013</h4>
                             </div>
-                            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                            <div class="tab-pane fade" id="graduacao-tab-pane" role="tabpanel" aria-labelledby="graduacao-tab" tabindex="0">
                                 <h4 class="mt-5">Curso: Administração</h4>
                                 <h4>Instituição: UNA</h4>
                                 <h4>Concluı́do em 2004</h4>
                             </div>
-                            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                            <div class="tab-pane fade" id="tecnico-tab-pane" role="tabpanel" aria-labelledby="tecnico-tab" tabindex="0">
                                 <h4 class="mt-5">Curso: Formação Gerencial</h4>
                                 <h4>Instituição: SESI / FIEMG</h4>
                                 <h4>Concluı́do em 2000</h4>
                             </div>
-                            <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
+                            <div class="tab-pane fade" id="cursos-tab-pane" role="tabpanel" aria-labelledby="cursos-tab" tabindex="0">
                                 <div><br>
                                     <i class="fa fa-check"> </i> Formação Python Developer - DIO desde Jul/2022 <br>
                                     <i class="fa fa-check"> </i> Formação SQL Database Specialist - DIO desde Jul/2022 <br>
@@ -230,111 +231,294 @@
             </button>
 
             <div data-accordion-body="4" class="accordion-body">
-                <section class="portfolio-container row row-cols-1 row-cols-md-3 g-4">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="javascript-tab" data-bs-toggle="tab" data-bs-target="#javascript-tab-pane" 
+                                    type="button" role="tab" aria-controls="javascript-tab-pane" aria-selected="true">JavaScript</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="python-tab" data-bs-toggle="tab" data-bs-target="#python-tab-pane" 
+                                type="button" role="tab" aria-controls="python-tab-pane" aria-selected="false">Python</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="outros-tab" data-bs-toggle="tab" data-bs-target="#outros-tab-pane" 
+                                type="button" role="tab" aria-controls="outros-tab-pane" aria-selected="false">Outros</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content mb-5" id="myTabContent">
+                            <div class="tab-pane fade show active" id="javascript-tab-pane" role="tabpanel" aria-labelledby="javascript-tab" tabindex="0">
+                                
+                                <section class="portfolio-container row row-cols-1 row-cols-md-3 g-4">
 
-                    <div class="col">
-                        <article class="card text-center h-100 text-bg-light border-success">
-                            <div class="card-header">
-                                Ruas Que Andei
+                                    <div class="col mt-5">
+                                        <article class="card text-center h-100 text-bg-light border-success">
+                                            <div class="card-header">
+                                                Jogo de Memória
+                                            </div>
+                                            <div class="card-body text-success">
+                                                <h5 class="card-title">Em JavaScript</h5>
+                                                <p class="card-text">Contagem de erros e mudança de temas.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="https://angelitasantos.github.io/jogo-memoria-js/" target="_blank" class="btn btn-sm btn-success">Site</a>
+                                                <a href="https://github.com/angelitasantos/jogo-memoria-js" target="_blank" class="btn btn-sm btn-success">Repositório Github</a>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    <div class="col mt-5">
+                                        <article class="card text-center h-100 text-bg-light border-success">
+                                            <div class="card-header">
+                                                Carrinho de Compras
+                                            </div>
+                                            <div class="card-body text-success">
+                                                <h5 class="card-title">Em JavaScript</h5>
+                                                <p class="card-text">Dados via arquivo json.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="https://angelitasantos.github.io/carrinho-compras-js/" target="_blank" class="btn btn-sm btn-success">Site</a>
+                                                <a href="https://github.com/angelitasantos/carrinho-compras-js" target="_blank" class="btn btn-sm btn-success">Repositório Github</a>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    <div class="col mt-5">
+                                        <article class="card text-center h-100 text-bg-light border-success">
+                                            <div class="card-header">
+                                                JavaScript em Camadas
+                                            </div>
+                                            <div class="card-body text-success">
+                                                <h5 class="card-title">Type Module</h5>
+                                                <p class="card-text">Utiliza package.json.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="https://angelitasantos.github.io/sig-mec-test/" target="_blank" class="btn btn-sm btn-success">Site</a>
+                                                <a href="https://github.com/angelitasantos/sig-mec-test" target="_blank" class="btn btn-sm btn-success">Repositório Github</a>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    <div class="col">
+                                        <article class="card text-center h-100 text-bg-light border-success">
+                                            <div class="card-header">
+                                                Ruas Que Andei
+                                            </div>
+                                            <div class="card-body text-success">
+                                                <h5 class="card-title">Blog com JavaScript</h5>
+                                                <p class="card-text">Relógio digital em JavaScript.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="https://angelitasantos.github.io/ruasqueandei/" target="_blank" class="btn btn-sm btn-success">Site</a>
+                                                <a href="https://github.com/angelitasantos/ruasqueandei" target="_blank" class="btn btn-sm btn-success">Repositório Github</a>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    <div class="col">
+                                        <article class="card text-center h-100 text-bg-light border-success">
+                                            <div class="card-header">
+                                                Consulta CEP
+                                            </div>
+                                            <div class="card-body text-success">
+                                                <h5 class="card-title">API ViaCEP</h5>
+                                                <p class="card-text">Consultar dados do logradouro.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="https://angelitasantos.github.io/consulta-cep/" target="_blank" class="btn btn-sm btn-success">Site</a>
+                                                <a href="https://github.com/angelitasantos/consulta-cep" target="_blank" class="btn btn-sm btn-success">Repositório Github</a>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    <div class="col">
+                                        <article class="card text-center h-100 text-bg-light border-success">
+                                            <div class="card-header">
+                                                Contador
+                                            </div>
+                                            <div class="card-body text-success">
+                                                <h5 class="card-title">Contador JavaScript</h5>
+                                                <p class="card-text">Função de Incremento e Decremento.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="https://angelitasantos.github.io/contador-js/" target="_blank" class="btn btn-sm btn-success">Site</a>
+                                                <a href="https://github.com/angelitasantos/contador-js" target="_blank" class="btn btn-sm btn-success">Repositório Github</a>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    <div class="col">
+                                        <article class="card text-center h-100 text-bg-light border-success">
+                                            <div class="card-header">
+                                                Clone Netflix
+                                            </div>
+                                            <div class="card-body text-success">
+                                                <h5 class="card-title">Owl Carousel</h5>
+                                                <p class="card-text">Clone streaming e utiliza biblioteca owl carousel.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="https://angelitasantos.github.io/clone-streaming-movies/" target="_blank" class="btn btn-sm btn-success">Site</a>
+                                                <a href="https://github.com/angelitasantos/clone-streaming-movies" target="_blank" class="btn btn-sm btn-success">Repositório Github</a>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    <div class="col">
+                                        <article class="card text-center h-100 text-bg-light border-success">
+                                            <div class="card-header">
+                                                Blog Aulas Online
+                                            </div>
+                                            <div class="card-body text-success">
+                                                <h5 class="card-title">Aulas HTML, CSS, Bootstrap</h5>
+                                                <p class="card-text">Utiliza coletânea Bootstrap: cards, carrossel .</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="https://angelitasantos.github.io/blog-aulas-online/" target="_blank" class="btn btn-sm btn-success">Site</a>
+                                                <a href="https://github.com/angelitasantos/blog-aulas-online" target="_blank" class="btn btn-sm btn-success">Repositório Github</a>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    <div class="col">
+                                        <article class="card text-center h-100 text-bg-light border-success">
+                                            <div class="card-header">
+                                                Site Institucional
+                                            </div>
+                                            <div class="card-body text-success">
+                                                <h5 class="card-title">Funções JavaScript:</h5>
+                                                <p class="card-text">esconder, mostrar informações.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="mb-2">
+                                                    <a href="https://angelitasantos.github.io/site-institucional1/" target="_blank" class="btn btn-sm btn-success">Site1</a>
+                                                    <a href="https://github.com/angelitasantos/site-institucional1" target="_blank" class="btn btn-sm btn-success">Repositório Github1</a>
+                                                </div>
+                                                <div>
+                                                    <a href="https://angelitasantos.github.io/site-institucional2/" target="_blank" class="btn btn-sm btn-success">Site2</a>
+                                                    <a href="https://github.com/angelitasantos/site-institucional2" target="_blank" class="btn btn-sm btn-success">Repositório Github2</a>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                </section>
+
                             </div>
-                            <div class="card-body text-success">
-                                <h5 class="card-title">Blog com JavaScript</h5>
-                                <p class="card-text">Relógio digital em JavaScript.</p>
+                            <div class="tab-pane fade" id="python-tab-pane" role="tabpanel" aria-labelledby="python-tab" tabindex="0">
+                                
+                                <section class="portfolio-container row row-cols-1 row-cols-md-3 g-4">
+
+                                    <div class="col mt-5">
+                                        <article class="card text-center h-100 text-bg-light border-success">
+                                            <div class="card-header">
+                                                Python
+                                            </div>
+                                            <div class="card-body text-success">
+                                                <h5 class="card-title">Python</h5>
+                                                <p class="card-text">Python.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="" target="_blank" class="btn btn-sm btn-success">Site</a>
+                                                <a href="" target="_blank" class="btn btn-sm btn-success">Repositório Github</a>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    <div class="col mt-5">
+                                        <article class="card text-center h-100 text-bg-light border-success">
+                                            <div class="card-header">
+                                                Python
+                                            </div>
+                                            <div class="card-body text-success">
+                                                <h5 class="card-title">Python</h5>
+                                                <p class="card-text">Python.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="" target="_blank" class="btn btn-sm btn-success">Site</a>
+                                                <a href="" target="_blank" class="btn btn-sm btn-success">Repositório Github</a>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    <div class="col mt-5">
+                                        <article class="card text-center h-100 text-bg-light border-success">
+                                            <div class="card-header">
+                                                Python
+                                            </div>
+                                            <div class="card-body text-success">
+                                                <h5 class="card-title">Python</h5>
+                                                <p class="card-text">Python.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="" target="_blank" class="btn btn-sm btn-success">Site</a>
+                                                <a href="" target="_blank" class="btn btn-sm btn-success">Repositório Github</a>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                </section>
+
                             </div>
-                            <div class="card-footer">
-                                <a href="https://angelitasantos.github.io/ruasqueandei/" target="_blank" class="btn btn-sm btn-success">Site</a>
-                                <a href="https://github.com/angelitasantos/ruasqueandei" target="_blank" class="btn btn-sm btn-success">Repositório Github</a>
+                            <div class="tab-pane fade" id="outros-tab-pane" role="tabpanel" aria-labelledby="outros-tab" tabindex="0">
+                                
+                                <section class="portfolio-container row row-cols-1 row-cols-md-3 g-4">
+
+                                    <div class="col mt-5">
+                                        <article class="card text-center h-100 text-bg-light border-success">
+                                            <div class="card-header">
+                                                Outros
+                                            </div>
+                                            <div class="card-body text-success">
+                                                <h5 class="card-title">Outros</h5>
+                                                <p class="card-text">Outros.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="" target="_blank" class="btn btn-sm btn-success">Site</a>
+                                                <a href="" target="_blank" class="btn btn-sm btn-success">Repositório Github</a>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    <div class="col mt-5">
+                                        <article class="card text-center h-100 text-bg-light border-success">
+                                            <div class="card-header">
+                                                Outros
+                                            </div>
+                                            <div class="card-body text-success">
+                                                <h5 class="card-title">Outros</h5>
+                                                <p class="card-text">Outros.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="" target="_blank" class="btn btn-sm btn-success">Site</a>
+                                                <a href="" target="_blank" class="btn btn-sm btn-success">Repositório Github</a>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    <div class="col mt-5">
+                                        <article class="card text-center h-100 text-bg-light border-success">
+                                            <div class="card-header">
+                                                Outros
+                                            </div>
+                                            <div class="card-body text-success">
+                                                <h5 class="card-title">Outros</h5>
+                                                <p class="card-text">Outros.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="" target="_blank" class="btn btn-sm btn-success">Site</a>
+                                                <a href="" target="_blank" class="btn btn-sm btn-success">Repositório Github</a>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                </section>
+
                             </div>
-                        </article>
+                        </div>
                     </div>
-
-                    <div class="col">
-                        <article class="card text-center h-100 text-bg-light border-success">
-                            <div class="card-header">
-                                Consulta CEP
-                            </div>
-                            <div class="card-body text-success">
-                                <h5 class="card-title">API ViaCEP</h5>
-                                <p class="card-text">Consultar dados do logradouro.</p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="https://angelitasantos.github.io/consulta-cep/" target="_blank" class="btn btn-sm btn-success">Site</a>
-                                <a href="https://github.com/angelitasantos/consulta-cep" target="_blank" class="btn btn-sm btn-success">Repositório Github</a>
-                            </div>
-                        </article>
-                    </div>
-
-                    <div class="col">
-                        <article class="card text-center h-100 text-bg-light border-success">
-                            <div class="card-header">
-                                Contador
-                            </div>
-                            <div class="card-body text-success">
-                                <h5 class="card-title">Contador JavaScript</h5>
-                                <p class="card-text">Função de Incremento e Decremento.</p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="https://angelitasantos.github.io/contador-js/" target="_blank" class="btn btn-sm btn-success">Site</a>
-                                <a href="https://github.com/angelitasantos/contador-js" target="_blank" class="btn btn-sm btn-success">Repositório Github</a>
-                            </div>
-                        </article>
-                    </div>
-
-                    <div class="col">
-                        <article class="card text-center h-100 text-bg-light border-success">
-                            <div class="card-header">
-                                Clone Netflix
-                            </div>
-                            <div class="card-body text-success">
-                                <h5 class="card-title">Owl Carousel</h5>
-                                <p class="card-text">Clone streaming e utiliza biblioteca owl carousel.</p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="https://angelitasantos.github.io/clone-streaming-movies/" target="_blank" class="btn btn-sm btn-success">Site</a>
-                                <a href="https://github.com/angelitasantos/clone-streaming-movies" target="_blank" class="btn btn-sm btn-success">Repositório Github</a>
-                            </div>
-                        </article>
-                    </div>
-
-                    <div class="col">
-                        <article class="card text-center h-100 text-bg-light border-success">
-                            <div class="card-header">
-                                Blog Aulas Online
-                            </div>
-                            <div class="card-body text-success">
-                                <h5 class="card-title">Aulas HTML, CSS, Bootstrap</h5>
-                                <p class="card-text">Utiliza coletânea Bootstrap: cards, carrossel .</p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="https://angelitasantos.github.io/blog-aulas-online/" target="_blank" class="btn btn-sm btn-success">Site</a>
-                                <a href="https://github.com/angelitasantos/blog-aulas-online" target="_blank" class="btn btn-sm btn-success">Repositório Github</a>
-                            </div>
-                        </article>
-                    </div>
-
-                    <div class="col">
-                        <article class="card text-center h-100 text-bg-light border-success">
-                            <div class="card-header">
-                                Site Institucional
-                            </div>
-                            <div class="card-body text-success">
-                                <h5 class="card-title">Funções JavaScript:</h5>
-                                <p class="card-text">esconder, mostrar informações.</p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="mb-2">
-                                    <a href="https://angelitasantos.github.io/site-institucional1/" target="_blank" class="btn btn-sm btn-success">Site1</a>
-                                    <a href="https://github.com/angelitasantos/site-institucional1" target="_blank" class="btn btn-sm btn-success">Repositório Github1</a>
-                                </div>
-                                <div>
-                                    <a href="https://angelitasantos.github.io/site-institucional2/" target="_blank" class="btn btn-sm btn-success">Site2</a>
-                                    <a href="https://github.com/angelitasantos/site-institucional2" target="_blank" class="btn btn-sm btn-success">Repositório Github2</a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-
-                </section>
+                </div>
+                
             </div>
         </section>
 
