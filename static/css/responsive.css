@@ -1,3 +1,12 @@
+@media (max-width:1000px) {
+
+    .company-area {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
 @media (max-width: 800px) {
 
     .social-media {
@@ -7,6 +16,40 @@
 
     .github-api img:first-child {
         height: 7.25rem;
+    }
+
+    .experience-complete {
+        flex-direction: column;
+    }
+
+    .company-area {
+        display: block;
+    }
+
+    .company-item {
+        max-width: 100%;
+    }
+
+    .company-container {
+        padding-top: 60px;
+    }
+
+    .company-modal-area {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .company-modal-body {
+        width: 100vw;
+        display: block;
+        padding: 20px;
+        border-radius: 0;
+        box-shadow: none;
+        margin: 0;
+    }
+
+    .company-info h1 {
+        margin-top: 20px;
     }
 
 }

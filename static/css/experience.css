@@ -11,7 +11,7 @@
     flex-direction: column;
 }
 
-.models {
+.company-models {
     display: none;
 }
 
@@ -66,17 +66,18 @@
 .company-item--name {
     font-size: 16px;
     font-weight: 300;
-    color: #000;
+    color: #003300;
     margin-top: 5px;
 }
 
-.company-item--desc {
+.company-item--desc,
+.company-item--res {
     font-size: 13px;
-    color: #555;
+    color: #18493e;
     margin-top: 1px;
 }
 
-.companyWindowArea {
+.company-modal-area {
     position: fixed;
     left: 0;
     top: 0;
@@ -90,104 +91,44 @@
     overflow-y: auto;
 }
 
-.companyWindowBody {
-    width: 900px;
-    background-color: #FFF;
+.company-modal-body {
+    width: 700px;
+    background-color: #FFFFFF;
     border-radius: 10px;
-    box-shadow: 0px 0px 15px #999;
+    box-shadow: 0px 0px 15px #999999;
     display: flex;
     margin: 20px 0px;
+    padding: 0 30px;
+    text-align: center;
 }
 
-.companyInfo {
+.company-info {
     flex: 1;
-    font-family: 'Hepta Slab', Helvetica, Arial;
     padding-bottom: 50px;
 }
 
-.companyInfo h1 {
+.company-info h1 {
     margin-top: 50px;
 }
 
-.companyInfo .companyInfo--desc {
+.company-info .company-info--desc {
     font-size: 15px;
-    color: #999;
+    color: #003300;
     margin-top: 10px;
     font-family: 'Lato', Helvetica, Arial;
 }
 
-.companyInfo--sector {
-    color: #CCC;
-    text-transform: uppercase;
-    font-size: 14px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-
-.companyInfo--cancelButton {
+.company-info--cancelButton {
     width: 200px;
     height: 50px;
+    margin-top: 10px;
     background-color: #003300;
     color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border-radius: 15px;
     text-align: center;
     display: inline-block;
     cursor: pointer;
-}
-
-.companyInfo--cancelMobileButton {
-    display: none;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    margin-bottom: 30px;
-}
-
-@media (max-width:1000px) {
-    .company-area {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width:840px) {
-    .experience-complete {
-        flex-direction: column;
-    }
-
-    .company-area {
-        display: block;
-    }
-
-    .company-item {
-        max-width: 100%;
-    }
-
-    .company-container {
-        padding-top: 60px;
-    }
-
-    .companyWindowArea {
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-
-    .companyWindowBody {
-        width: 100vw;
-        display: block;
-        padding: 20px;
-        border-radius: 0;
-        box-shadow: none;
-        margin: 0;
-    }
-
-    .companyInfo h1 {
-        margin-top: 20px;
-    }
-
-    .companyInfo--cancelButton {
-        display: none;
-    }
-
-    .companyInfo--cancelMobileButton {
-        display: block;
-    }
+    line-height: 50px;
 }

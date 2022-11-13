@@ -10,38 +10,39 @@ function atualScreen() {
 }
 
 companyJson.map(function (item, index) {
-    let companyItem = dqS('.models .company-item').cloneNode(true);
+    let companyItem = dqS('.company-models .company-item').cloneNode(true);
 
     companyItem.setAttribute('data-key', index)
     companyItem.querySelector('.company-item--name').innerHTML = item.name;
-    companyItem.querySelector('.company-item--desc').innerHTML = item.description;
+    companyItem.querySelector('.company-item--desc').innerHTML = item.resume;
     companyItem.querySelector('a').addEventListener('click', (event) => {
         event.preventDefault();
         let key = event.target.closest('.company-item').getAttribute('data-key');
         modalkey = key;
 
-        dqS('.companyWindowArea .companyInfo h1').innerHTML = companyJson[key].name;
-        dqS('.companyWindowArea .companyInfo--desc').innerHTML = companyJson[key].description;
+        dqS('.company-modal-area .company-info h1').innerHTML = companyJson[key].name;
+        dqS('.company-modal-area .company-info--res').innerHTML = companyJson[key].resume;
+        dqS('.company-modal-area .company-info--desc').innerHTML = companyJson[key].description;
 
-        dqS('.companyWindowArea').style.opacity = 0;
-        dqS('.companyWindowArea').style.display = 'flex';
+        dqS('.company-modal-area').style.opacity = 0;
+        dqS('.company-modal-area').style.display = 'flex';
         setTimeout(() => {
-            dqS('.companyWindowArea').style.opacity = 1;
+            dqS('.company-modal-area').style.opacity = 1;
         }, 200);
     })
 
     dqS('.company-area').append(companyItem);
 });
 
-dqSA('.companyInfo--cancelButton, .companyInfo--cancelMobileButton').forEach(
+dqSA('.company-info--cancelButton').forEach(
     function (item) {
         item.addEventListener('click', closeModal)
     }
 );
 
 function closeModal() {
-    dqS('.companyWindowArea').style.opacity = 0;;
+    dqS('.company-modal-area').style.opacity = 0;;
     setTimeout(() => {
-        dqS('.companyWindowArea').style.display = 'none';
+        dqS('.company-modal-area').style.display = 'none';
     }, 500);
 }
