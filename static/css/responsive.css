@@ -5,4 +5,8 @@
         flex-direction: column;
     }
 
+    .github-api img:first-child {
+        height: 7.25rem;
+    }
+
 }

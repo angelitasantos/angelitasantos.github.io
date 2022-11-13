@@ -40,7 +40,7 @@
 }
 
 .accordion-body.active {
-    max-height: 10rem;
+    max-height: 100vh;
     padding: 1rem;
 }
 
@@ -48,4 +48,35 @@
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 6px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skills figure {
+    max-width: 300px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skills figure img  {
+    width: 50px;
+    height: 50px;
+    padding: 0.5rem;
+}
+
+.github-api {
+    text-align: center;
+}
+
+.github-api img {
+    height: 10rem;
 }
