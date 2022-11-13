@@ -26,5 +26,7 @@ let companyJson = [
     { id: 6, name: 'W.C.A', resume: 'jul/2005 a dez/2007', description: 'Atendimento ao cliente (venda de serviços de montagem de stand em eventos).' },
     { id: 7, name: 'W.R.S', resume: 'jul/2003 a jun/2005', description: 'Contas a receber e cobrança.' },
     { id: 8, name: 'Orthocrin', resume: 'set/2001 a fev/2003', description: 'Apuração de custos industriais e atualização da estrutura de custo dos produtos.' },
-    { id: 9, name: 'Profarma', resume: 'dez/1996 a mar/1999', description: 'Apuração de custos de distribuição.' }
+    { id: 9, name: 'Comercial Marley', resume: 'dez/1999 a jul/2001', description: 'Atividades de contas a receber.' },
+    { id: 10, name: 'Profarma', resume: 'dez/1996 a mar/1999', description: 'Apuração de custos de distribuição.' },
+    { id: 11, name: 'San Belô', resume: 'mar/1996 a out/1996', description: 'Auxiliar o controle de estoque.' }
 ];
