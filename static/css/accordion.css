@@ -41,6 +41,7 @@
 
 .accordion-body.active {
     max-height: 100vh;
+    overflow-y: auto;
     padding: 1rem;
 }
 
@@ -59,7 +60,7 @@
 
 .skills figure {
     max-width: 300px;
-    padding: 1rem;
+    padding: 0.5rem;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -67,7 +68,7 @@
     text-align: center;
 }
 
-.skills figure img  {
+.skills figure img {
     width: 50px;
     height: 50px;
     padding: 0.5rem;

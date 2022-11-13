@@ -1,0 +1,193 @@
+.experience-complete {
+    box-sizing: border-box;
+}
+
+.experience-complete {
+    background-color: #EEE;
+    font-family: 'Lato', Helvetica, Arial;
+    font-size: 15px;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+}
+
+.models {
+    display: none;
+}
+
+.company-container {
+    transition: all ease .2s;
+}
+
+.company-container #companies {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.company-area {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.company-item {
+    text-align: center;
+    width: 200px;
+    font-family: 'Hepta Slab', Helvetica, Arial;
+    margin: 0 auto 0 auto;
+}
+
+.company-item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.company-item--add {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 25px;
+    background-color: #003300;
+    text-align: center;
+    color: #FFF;
+    font-size: 22px;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: all ease .2s;
+}
+
+.company-item a:hover .company-item--add {
+    background-color: #18493e;
+}
+
+.company-item--name {
+    font-size: 16px;
+    font-weight: 300;
+    color: #000;
+    margin-top: 5px;
+}
+
+.company-item--desc {
+    font-size: 13px;
+    color: #555;
+    margin-top: 1px;
+}
+
+.companyWindowArea {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+    transition: all ease .5s;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.companyWindowBody {
+    width: 900px;
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #999;
+    display: flex;
+    margin: 20px 0px;
+}
+
+.companyInfo {
+    flex: 1;
+    font-family: 'Hepta Slab', Helvetica, Arial;
+    padding-bottom: 50px;
+}
+
+.companyInfo h1 {
+    margin-top: 50px;
+}
+
+.companyInfo .companyInfo--desc {
+    font-size: 15px;
+    color: #999;
+    margin-top: 10px;
+    font-family: 'Lato', Helvetica, Arial;
+}
+
+.companyInfo--sector {
+    color: #CCC;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.companyInfo--cancelButton {
+    width: 200px;
+    height: 50px;
+    background-color: #003300;
+    color: #FFFFFF;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.companyInfo--cancelMobileButton {
+    display: none;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+@media (max-width:1000px) {
+    .company-area {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:840px) {
+    .experience-complete {
+        flex-direction: column;
+    }
+
+    .company-area {
+        display: block;
+    }
+
+    .company-item {
+        max-width: 100%;
+    }
+
+    .company-container {
+        padding-top: 60px;
+    }
+
+    .companyWindowArea {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .companyWindowBody {
+        width: 100vw;
+        display: block;
+        padding: 20px;
+        border-radius: 0;
+        box-shadow: none;
+        margin: 0;
+    }
+
+    .companyInfo h1 {
+        margin-top: 20px;
+    }
+
+    .companyInfo--cancelButton {
+        display: none;
+    }
+
+    .companyInfo--cancelMobileButton {
+        display: block;
+    }
+}

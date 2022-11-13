@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="static/css/responsive.css">
     <link rel="stylesheet" href="static/css/header.css">
     <link rel="stylesheet" href="static/css/accordion.css">
+    <link rel="stylesheet" href="static/css/experience.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 
@@ -73,7 +74,8 @@
             </button>
 
             <div data-accordion-body="1" class="accordion-body">
-                <div class="skills">
+
+                <section class="skills">
                     <figure class="frontend">
                         <figcaption>Front-end</figcaption>
                         <div>
@@ -96,13 +98,15 @@
                             <img alt="logo PostgreSQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg">
                         </div>
                     </figure>                  
-                </div>
-                <div class="github-api">
+                </section>
+
+                <section class="github-api">
                     <a href="https://github.com/angelitasantos" target="_blank">
                         <img src="https://github-readme-stats.vercel.app/api?username=AngelitaSantos&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
                         <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AngelitaSantos&layout=compact&langs_count=7&theme=dracula"/>
                     </a>
-                </div>
+                </section>
+
             </div>
         </section>
     
@@ -113,13 +117,44 @@
             </button>
 
             <div data-accordion-body="2" class="accordion-body">
-                <div>
+
+                <div class="experience-resume">
                     <p>Administradora desde 2005 e aprendendo sobre o mundo da programação desde 2018.</p>
                     <p>Experiência nas áreas de custos, planejamento e finanças.</p>
                     <i class="fa fa-check"> Custos e Planejamento </i>
                     <p> 11 anos de experiência em indústrias e distribuidoras.</p>
                     <i class="fa fa-check"> Finanças</i>
                     <p> 8 anos de experiência em distribuidoras e lojas de auto peças.</p>
+                </div>
+
+                <div class="experience-complete">
+
+                    <section class="models">
+                        <div class="company-item">
+                            <a href="">
+                                <div class="company-item--add">+</div>
+                            </a>
+                            <div class="company-item--name">--</div>
+                            <div class="company-item--desc">--</div>
+                        </div>
+                    </section>
+
+                    <section class="company-container">
+                        <h2 id="companies">Experiência Profissional:</h2>
+                        <div class="company-area"></div>
+                    </section>
+                    
+                    <section class="companyWindowArea">
+                        <div class="companyWindowBody">
+                            <div class="companyInfo--cancelMobileButton">Voltar</div>
+                            <div class="companyInfo">
+                                <h1>--</h1>
+                                <div class="companyInfo--desc">--</div>
+                                <div class="companyInfo--cancelButton">Cancelar</div>
+                            </div>
+                        </div>
+                    </section>
+
                 </div>
             </div>
         </section>
@@ -172,6 +207,8 @@
 
     <script type="text/javascript" src="static/js/text.js"></script>
     <script type="text/javascript" src="static/js/accordion.js"></script>
+    <script type="text/javascript" src="static/js/companyData.js"></script>
+    <script type="text/javascript" src="static/js/companies.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" 
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" 
