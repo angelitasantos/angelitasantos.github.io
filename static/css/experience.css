@@ -107,7 +107,13 @@
 }
 
 .company-info h1 {
+    font-family: 'Amatic SC', cursive !important;
+    font-size: 50px;
     margin-top: 50px;
+}
+
+.company-info h4 {
+    text-transform: uppercase;
 }
 
 .company-info .company-info--res, .company-info .company-info--desc {
