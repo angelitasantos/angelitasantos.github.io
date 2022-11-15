@@ -6,5 +6,5 @@ fullName.textContent = selectorName;
 
 
 let nameFunction = document.querySelector('#name-function');
-let selectorNameFunction = 'Back-end Developer';
+let selectorNameFunction = 'Back-end Developer Jr';
 nameFunction.textContent = selectorNameFunction;
