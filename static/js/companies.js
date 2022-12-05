@@ -23,6 +23,7 @@ companyJson.map(function (item, index) {
         dqS('.company-modal-area .company-info h1').innerHTML = companyJson[key].name;
         dqS('.company-modal-area .company-info h4').innerHTML = companyJson[key].fullName;
         dqS('.company-modal-area .company-info--res').innerHTML = companyJson[key].resume;
+        dqS('.company-modal-area .company-info--role').innerHTML = 'Cargo: ' + companyJson[key].role;
         dqS('.company-modal-area .company-info--desc').innerHTML = companyJson[key].description;
 
         dqS('.company-modal-area').style.opacity = 0;

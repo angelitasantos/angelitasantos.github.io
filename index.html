@@ -34,20 +34,20 @@
     <header class="header-wrapper">
 
         <section class="checkbox-container">
-            <input type="checkbox" id="toggle">
-            <label class="checkbox" for="toggle">
-                <div class="trace"></div>
-                <div class="trace"></div>
-                <div class="trace"></div>
-            </label>
-            <div class="menu"></div>
-            <nav class="menu-items">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="https://www.linkedin.com/in/angelitasantos/" target="_blank">Sobre</a></li>
-                    <li><a href="https://github.com/angelitasantos" target="_blank">Projetos</a></li>
-                </ul>
-            </nav>
+            <div class="header-container">
+                <nav class="nav-menu">
+                    <div class="language">
+                        <div class="language-selected">
+                            pt-BR
+                        </div>
+                        <ul>
+                            <li><a href="#" class="br">Português</a></li>
+                            <li><a href="#" class="en">English</a></li>
+                            <li><a href="#" class="es">Español</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </section>
 
         <section class="personal-data">
@@ -69,7 +69,7 @@
 
         <section class="accordion-item">
             <button data-accordion-header="1" data-js="accordion-header" class="accordion-header">
-                <strong data-accordion-header="1">Skills</strong>
+                <strong data-accordion-header="1" id="skills">Habilidades</strong>
                 <i data-accordion-header="1" class="fas fa-angle-down"></i>
             </button>
 
@@ -92,7 +92,7 @@
                         </div>
                     </figure>    
                     <figure class="database">
-                        <figcaption>Banco de Dados</figcaption>
+                        <figcaption>Database</figcaption>
                         <div>
                             <img alt="logo MySQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
                             <img alt="logo PostgreSQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg">
@@ -150,6 +150,7 @@
                                 <h1></h1>
                                 <h4></h4>
                                 <div class="company-info--res"></div>
+                                <div class="company-info--role"></div>
                                 <div class="company-info--desc"></div>
                                 <div class="company-info--button">Fechar</div>
                             </div>
@@ -644,6 +645,8 @@
     
 
     <script type="text/javascript" src="static/js/text.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="static/js/multi_language.js"></script>
     <script type="text/javascript" src="static/js/accordion.js"></script>
     <script type="text/javascript" src="static/js/companyData.js"></script>
     <script type="text/javascript" src="static/js/companies.js"></script>
