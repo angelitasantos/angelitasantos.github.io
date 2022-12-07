@@ -7,11 +7,7 @@ let companyJson = [
      crı́ticas de custos ao gestor visando melhoria de produtividade.' },
     {
         id: 3, name: 'Lucio Peças', fullName: 'Lucio Auto Peças', resume: 'ago/2018 a abr/2020', role: 'Analista Financeiro', description: 'Atividades de contas a\
-         receber e contas a pagar. Emissão de notas fiscais e boletos de cobrança. Controle de cartões\
-         (site x sistema). Cobrança de clientes em atraso. Análise de crédito e mudança de perfil de \
-         cliente no sistema, caso necessário. Conferência diária de caixa e movimentação bancária. \
-         Acompanhamento do orçamento previsto x realizado. Elaboração do resultado mensal (vendas x \
-            compras, recebimentos x pagamentos).' },
+         receber. Emissão de notas fiscais e boletos de cobrança. Cobrança de clientes em atraso.' },
     {
         id: 4, name: 'Alumipack', fullName: 'Alumipack Indústria e Comércio', resume: 'nov/2009 a set/2017', role: 'Analista de Custos', description: 'Coordenação de Custos nas atividades\
          de planejamento e controle de recursos industriais e logı́sticos; apuração dos custos industriais e\
