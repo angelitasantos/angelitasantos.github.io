@@ -1,0 +1,38 @@
+{
+    "portfolio": {
+        "python": [
+        {
+            "title": "CRUD Todo",
+            "description": "Lista de Tarefas",
+            "technologies": "Python - Django",
+            "site_url": "https://github.com/angelitasantos/python-django-crud-todo",
+            "repo_url": "https://github.com/angelitasantos/python-django-crud-todo"
+        },
+        {
+            "title": "ERP Locabike",
+            "description": "Site institucional com painel admin.",
+            "technologies": "Python - Flask - MySQL",
+            "site_url": "https://python-flask-mysql-locabike.herokuapp.com/",
+            "repo_url": "https://github.com/angelitasantos/python-flask-mysql-locabike"
+        }
+        ],
+        "javascript": [
+        {
+            "title": "Jogo de Memória",
+            "description": "Contagem de erros e mudança de temas.",
+            "technologies": "Em JavaScript",
+            "site_url": "https://angelitasantos.github.io/jogo-memoria-js/",
+            "repo_url": "https://github.com/angelitasantos/jogo-memoria-js"
+        }
+        ],
+        "others": [
+        {
+            "title": "GitHub",
+            "description": "Git e Github - Do clone ao pull request.",
+            "technologies": "Comandos Básicos",
+            "site_url": "https://angelitasantos.github.io/github-comandos-basicos/",
+            "repo_url": "https://github.com/angelitasantos/github-comandos-basicos"
+        }
+        ]
+    }
+}

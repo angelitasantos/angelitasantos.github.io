@@ -1,0 +1,17 @@
+{
+    "languages": [
+        {
+            "language": "Inglês",
+            "level": "Escrita/Fala Nível Básico",
+            "courses": [
+                "Inglês - SAS Idioma Nı́vel Básico Mar a Dez/2014",
+                "Inglês - Canal EngVid Nı́vel Básico/Intermediário desde Jan/2015",
+                "Inglês - KGIC Toronto Agosto/2015 - Curso de Intercâmbio 4 semanas"
+            ],
+            "resources": {
+                "name": "EngVid",
+                "url": "https://www.engvid.com/"
+            }
+        }
+    ]
+}

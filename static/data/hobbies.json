@@ -1,0 +1,22 @@
+{
+    "hobbies": [
+        {
+            "name": "Viajar e Fotografar",
+            "description": "Ruas que Andei",
+            "url": "https://angelitasantos.github.io/ruasqueandei/",
+            "badge": "Novo"
+        },
+        {
+            "name": "Jogar Board Games",
+            "description": "Ludopedia",
+            "url": "https://ludopedia.com.br/usuario/angelitajunia",
+            "badge": "Novo"
+        },
+        {
+            "name": "Escrever Histórias",
+            "description": "Wattpad / Amazon",
+            "url": "https://linktr.ee/angelitasantos",
+            "badge": "Novo"
+        }
+    ]
+}

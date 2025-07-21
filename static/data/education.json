@@ -1,0 +1,30 @@
+{
+    "education": {
+        "specialization": {
+            "course": "Gestão de Projetos com ênfase em Custos",
+            "institution": "IETEC",
+            "year": "2013"
+        },
+        "graduation": {
+            "course": "Administração",
+            "institution": "UNA",
+            "year": "2004"
+        },
+        "technical": {
+            "course": "Formação Gerencial",
+            "institution": "SESI / FIEMG",
+            "year": "2000"
+        },
+        "courses": [
+            "Formação Python Developer - DIO desde Jul/2022",
+            "Formação SQL Database Specialist - DIO desde Jul/2022",
+            "Formação JavaScript Developer - DIO desde Jul/2022",
+            "Desenvolve40+ Python 108 horas - Let's Code / Magazine Luiza Jan a Abr/2022",
+            "Desenvolvimento Backend: PostgreSQL, MySQL, PHP - DevMedia.com Set a Dez/2021",
+            "Desenvolvimento Web com HTML, CSS, PHP, MySQL - UDEMY Fev a Set/2020",
+            "Desenvolvimento de aplicativos com Java, Firebase - UDEMY Abr a Nov/2019",
+            "Excel Avançado, VBA, SQL - Hashtag Treinamentos desde Jan/2018",
+            "Manutenção de computadores - Training (2004)"
+        ]
+    }
+}

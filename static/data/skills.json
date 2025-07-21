@@ -1,0 +1,61 @@
+{
+    "skills": {
+        "frontend": {
+            "title": "Front-end",
+            "technologies": [
+                {
+                    "name": "HTML",
+                    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+                    "alt": "logo HTML"
+                },
+                {
+                    "name": "CSS",
+                    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+                    "alt": "logo CSS"
+                },
+                {
+                    "name": "JavaScript",
+                    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+                    "alt": "logo Js"
+                }
+            ]
+        },
+        "backend": {
+            "title": "Back-end",
+            "technologies": [
+                {
+                    "name": "Python",
+                    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+                    "alt": "logo Python"
+                },
+                {
+                    "name": "Django",
+                    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
+                    "alt": "logo Django"
+                }
+            ]
+        },
+        "database": {
+            "title": "Database",
+            "technologies": [
+                {
+                    "name": "MySQL",
+                    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+                    "alt": "logo MySQL"
+                },
+                {
+                    "name": "PostgreSQL",
+                    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+                    "alt": "logo PostgreSQL"
+                }
+            ]
+        },
+        "github_stats": {
+            "profile_url": "https://github.com/angelitasantos",
+            "stats": [
+                "https://github-readme-stats.vercel.app/api?username=AngelitaSantos&show_icons=true&theme=dracula&include_all_commits=true&count_private=true",
+                "https://github-readme-stats.vercel.app/api/top-langs/?username=AngelitaSantos&layout=compact&langs_count=7&theme=dracula"
+            ]
+        }
+    }
+}
