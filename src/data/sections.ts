@@ -1,0 +1,60 @@
+import type { Section } from '../types/section';
+
+export const sections: Section[] = [
+  {
+    id: 'hobbies',
+    title: 'Hobbies',
+    description: 'Interesses, atividades favoritas e momentos que fazem parte de mim.',
+    icon: '✨',
+    path: '/hobbies',
+    locked: false,
+  },
+  {
+    id: 'academica',
+    title: 'Experiência acadêmica',
+    description: 'Graduação, pós-graduação, cursos e certificações.',
+    icon: '🎓',
+    path: '/academica',
+    locked: false,
+  },
+  {
+    id: 'profissional',
+    title: 'Experiência profissional',
+    description: 'Resumo da minha trajetória, competências e áreas de atuação.',
+    icon: '💼',
+    path: '/profissional',
+    locked: true,
+  },
+  {
+    id: 'projetos',
+    title: 'Projetos',
+    description: 'Aplicações, estudos e soluções desenvolvidas por mim.',
+    icon: '💻',
+    path: '/projetos',
+    locked: false,
+  },
+  {
+    id: 'familia',
+    title: 'Família',
+    description: 'Histórias, conexões e uma árvore familiar organizada por gerações.',
+    icon: '🌳',
+    path: '/familia',
+    locked: false,
+  },
+  {
+    id: 'literatura',
+    title: 'Literatura',
+    description: 'Livros, escritos, histórias e o meu lado de escritora.',
+    icon: '📚',
+    path: '/literatura',
+    locked: false,
+  },
+  {
+    id: 'contato',
+    title: 'Contato',
+    description: 'Canais para entrar em contato e acompanhar meu trabalho.',
+    icon: '✉️',
+    path: '/contato',
+    locked: false,
+  },
+];

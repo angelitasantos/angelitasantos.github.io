@@ -1,42 +1,124 @@
-#root {
-  max-width: 1280px;
+/* ========================================================================================
+   App.css — Estilos compartilhados entre páginas
+   ======================================================================================== */
+
+.home-page,
+.placeholder-page {
+  width: min(1180px, calc(100% - 48px));
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26px 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.brand {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  border: 1px solid var(--text-primary);
+  border-radius: 50%;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.brand:hover {
+  color: var(--surface);
+  background: var(--text-primary);
+}
+
+.topbar-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 24px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.topbar-navigation a:hover {
+  color: var(--accent);
+}
+
+.primary-button {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  padding: 15px 20px;
+  color: var(--surface);
+  border-radius: 999px;
+  background: var(--text-primary);
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.primary-button:hover {
+  background: var(--accent);
+  transform: translateY(-2px);
+}
+
+.hero-eyebrow {
+  margin: 0 0 13px;
+  color: var(--accent);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.section-heading h2,
+.placeholder-page h1 {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(3rem, 7vw, 5.8rem);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 25px 0 35px;
+  border-top: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+}
+
+.footer p {
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .home-page,
+  .placeholder-page {
+    width: min(100% - 32px, 540px);
   }
-  to {
-    transform: rotate(360deg);
+
+  .topbar {
+    padding: 18px 0;
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .topbar-navigation {
+    gap: 15px;
+    font-size: 0.75rem;
   }
-}
 
-.card {
-  padding: 2em;
-}
+  .topbar-navigation a:first-child {
+    display: none;
+  }
 
-.read-the-docs {
-  color: #888;
+  .footer {
+    display: block;
+    line-height: 1.8;
+  }
 }

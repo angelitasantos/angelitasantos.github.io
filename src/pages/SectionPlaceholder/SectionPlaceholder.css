@@ -1,0 +1,36 @@
+.placeholder-page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 760px;
+}
+
+.placeholder-page h1 {
+  font-size: clamp(2.8rem, 7vw, 5.3rem);
+}
+
+.placeholder-page > p:not(.hero-eyebrow):not(.notice) {
+  max-width: 570px;
+  margin: 26px 0 30px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.placeholder-icon {
+  margin-bottom: 20px;
+  font-size: 3.5rem;
+}
+
+.notice {
+  max-width: 570px;
+  margin: 0 0 28px;
+  padding: 16px;
+  border-left: 4px solid var(--accent);
+  border-radius: 0 10px 10px 0;
+  background: rgba(183, 80, 56, 0.1);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}

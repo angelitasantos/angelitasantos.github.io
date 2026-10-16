@@ -1,0 +1,83 @@
+.profile-photo-button {
+  width: min(320px, 70vw);
+  padding: 0;
+  overflow: hidden;
+  cursor: zoom-in;
+  border: 10px solid var(--surface);
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+  background: transparent;
+  transition: transform 0.25s ease;
+}
+
+.profile-photo-button:hover {
+  transform: translateY(-6px) rotate(-2deg);
+}
+
+.profile-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.photo-instruction {
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+}
+
+.image-modal {
+  position: fixed;
+  z-index: 50;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(20, 28, 25, 0.86);
+  cursor: zoom-out;
+}
+
+.image-modal-content {
+  position: relative;
+  width: min(680px, 100%);
+  cursor: default;
+}
+
+.profile-photo-expanded {
+  display: block;
+  width: 100%;
+  max-height: 84vh;
+  object-fit: contain;
+  border: 8px solid var(--surface);
+  border-radius: var(--radius-md);
+}
+
+.close-modal-button {
+  position: absolute;
+  z-index: 2;
+  top: -16px;
+  right: -16px;
+  display: grid;
+  width: 43px;
+  height: 43px;
+  place-items: center;
+  cursor: pointer;
+  color: var(--surface);
+  border: 0;
+  border-radius: 50%;
+  background: var(--accent);
+  font-size: 2rem;
+  line-height: 1;
+}
+
+@media (max-width: 640px) {
+  .profile-photo-button {
+    width: min(235px, 64vw);
+    border-width: 7px;
+  }
+
+  .close-modal-button {
+    top: -11px;
+    right: -7px;
+  }
+}
