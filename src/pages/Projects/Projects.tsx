@@ -84,7 +84,7 @@ function Projects() {
                     : ''
                 }`}
                 type='button'
-                onClick={() => setSelectedTechnology(technology)}
+                onClick={() => handleTechnologyChange(technology)}
               >
                 {technology}
               </button>
