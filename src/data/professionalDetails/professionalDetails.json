@@ -1,0 +1,25 @@
+[
+  {
+    "id": "tecnologia-mobile-detalhada",
+    "company": "NTT DATA BRASIL CONSULTORIA DE NEGOCIOS E T.I LTDA.",
+    "role": "Analista de Sistema de Tecnologia da Informação",
+    "type": "clt",
+    "startDate": "2026-03",
+    "current": true,
+    "location": "Remoto",
+    "summary": "Construção de projetos voltados para desenvolvimento mobile e aprendizado contínuo em tecnologia.",
+    "responsibilities": [
+      "Desenvolvimento de aplicações mobile"
+    ],
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Java"
+    ],
+    "skills": [
+      "Desenvolvimento mobile",
+      "Grafeno (requisição de APIs)"
+    ],
+    "visibleInPublicSummary": false
+  }
+]

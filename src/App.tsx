@@ -3,7 +3,10 @@ import Home from './pages/Home/Home';
 import SectionPlaceholder from './pages/SectionPlaceholder/SectionPlaceholder';
 import Projects from './pages/Projects/Projects';
 import Education from './pages/Education/Education';
-
+import ProtectedRoute from './components/ProtectedRoute';
+import Professional from './pages/Professional/Professional';
+import ProfessionalDetails from './pages/Professional/ProfessionalDetails';
+import ProfessionalLogin from './pages/Professional/ProfessionalLogin';
 import './App.css';
 
 function App() {
@@ -13,6 +16,15 @@ function App() {
       <Route path='/:sectionId' element={<SectionPlaceholder />} />
       <Route path='/projetos' element={<Projects />} />
       <Route path='/academica' element={<Education />} />
+      <Route path='/profissional' element={<Professional />} />
+      <Route path='/profissional/acesso' element={<ProfessionalLogin />} />
+      <Route path='/profissional/detalhes'
+        element={
+          <ProtectedRoute>
+            <ProfessionalDetails />
+          </ProtectedRoute>
+        }
+      />
     </Routes>
   );
 }
