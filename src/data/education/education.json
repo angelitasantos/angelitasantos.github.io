@@ -1,0 +1,101 @@
+[
+  {
+    "id": "ads-puc-minas",
+    "course": "Análise e Desenvolvimento de Sistemas",
+    "institution": "PUC Minas",
+    "level": "pos-graduacao",
+    "status": "concluido",
+    "startDate": "2025-04",
+    "endDate": "2026-10",
+    "description": "Formação voltada ao desenvolvimento de sistemas, lógica de programação, banco de dados, arquitetura de software e práticas de tecnologia.",
+    "skills": [
+      "Algoritmos",
+      "Programação",
+      "Banco de dados",
+      "Desenvolvimento web",
+      "Engenharia de software"
+    ]
+  },
+  {
+    "id": "gestao-projetos",
+    "course": "Gestão de Projetos com Ênfase em Custos",
+    "institution": "IETEC",
+    "level": "pos-graduacao",
+    "status": "concluido",
+    "startDate": "2012-07",
+    "endDate": "2013-06",
+    "description": "Especialização voltada para planejamento, controle de custos, organização de recursos e gestão estratégica de projetos.",
+    "skills": [
+      "Gestão de projetos",
+      "Custos",
+      "Planejamento",
+      "Indicadores",
+      "Processos"
+    ]
+  },
+  {
+    "id": "administracao",
+    "course": "Administração",
+    "institution": "UNA Centro Universitário",
+    "level": "graduacao",
+    "status": "concluido",
+    "startDate": "2001-02",
+    "endDate": "2004-12",
+    "description": "Formação em gestão, administração financeira, processos organizacionais e desenvolvimento de estratégias.",
+    "skills": [
+      "Administração",
+      "Finanças",
+      "Planejamento",
+      "Gestão de pessoas"
+    ]
+  },
+  {
+    "id": "tecnico-fiemg-adm",
+    "course": "Formação Gerencial",
+    "institution": "SESI / FIEMG",
+    "level": "tecnico",
+    "status": "concluido",
+    "startDate": "1999-02",
+    "endDate": "2000-12",
+    "description": "Formação praática em gestão, administração financeira, processos organizacionais e desenvolvimento de estratégias.",
+    "skills": [
+      "Python",
+      "Pandas",
+      "Jupyter",
+      "Análise de dados"
+    ]
+  },
+  {
+    "id": "react-typescript",
+    "course": "React, TypeScript, Nodejs, Python, SQL",
+    "institution": "Hashtag Programação",
+    "level": "curso",
+    "status": "em-andamento",
+    "startDate": "2025-04",
+    "description": "Estudos fullstack para construção de interfaces modernas.",
+    "skills": [
+      "React",
+      "TypeScript",
+      "Nodejs",
+      "Python",
+      "SQL"
+    ]
+  },
+  {
+    "id": "python-dados",
+    "course": "Desenvolve40+ Python",
+    "institution": "Let’s Code / Magazine Luiza",
+    "level": "curso",
+    "status": "concluido",
+    "startDate": "2022-01",
+    "endDate": "2022-04",
+    "description": "Curso prático para análise e manipulação de dados utilizando Python.",
+    "skills": [
+      "Python",
+      "Pandas",
+      "Jupyter",
+      "Análise de dados"
+    ]
+  }
+
+]
