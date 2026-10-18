@@ -1,0 +1,187 @@
+[
+  {
+    "id": "familia-chiquinho",
+    "title": "Sô Chiquinho",
+    "description": "Árvore familiar organizada do Seu Chiquinho e Vó Aurora.",
+    "members": [
+      {
+        "id": "chiquinho",
+        "name": "Francisco e Aurora",
+        "relationship": "nucleo",
+        "description": "Raiz deste núcleo familiar.",
+        "children": [
+          {
+            "id": "chiquinho-01",
+            "name": "Filho 01",
+            "relationship": "filho",
+            "description": "Família de ...",
+            "children": [
+              {
+                "id": "chiquinho-01-02",
+                "name": "Filho 01",
+                "relationship": "filho"
+              }
+            ]
+          },
+          {
+            "id": "chiquinho-02",
+            "name": "Filho 02",
+            "relationship": "filho",
+            "description": "Família de ...",
+            "children": [
+              {
+                "id": "chiquinho-02-01",
+                "name": "Filho 02",
+                "relationship": "filho"
+              }
+            ]
+          },
+          {
+            "id": "chiquinho-03",
+            "name": "Filho 03",
+            "relationship": "filho",
+            "description": "Família de ...",
+            "children": [
+              {
+                "id": "chiquinho-03-03",
+                "name": "Filho 03",
+                "relationship": "filho"
+              }
+            ]
+          },
+          {
+            "id": "chiquinho-04",
+            "name": "Filho 04",
+            "relationship": "filho",
+            "description": "Família de ...",
+            "children": [
+              {
+                "id": "chiquinho-04-03",
+                "name": "Filho 04",
+                "relationship": "filho"
+              }
+            ]
+          },
+          {
+            "id": "chiquinho-05",
+            "name": "Filho 05",
+            "relationship": "filho",
+            "description": "Família de ...",
+            "children": [
+              {
+                "id": "chiquinho-05-01",
+                "name": "Filho 05",
+                "relationship": "filho"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "familia-branca",
+    "title": "Dona Branca",
+    "description": "Árvore familiar organizada do Sô Zito e Dona Branca.",
+    "members": [
+      {
+        "id": "branca",
+        "name": "Sô Zito e Dona Branca",
+        "relationship": "nucleo",
+        "description": "Raiz deste núcleo familiar.",
+        "children": [
+          {
+            "id": "branca-01",
+            "name": "Filho 01",
+            "relationship": "filho",
+            "description": "Família de ...",
+            "children": [
+              {
+                "id": "branca-01-02",
+                "name": "Filho 01",
+                "relationship": "filho"
+              }
+            ]
+          },
+          {
+            "id": "branca-02",
+            "name": "Filho 02",
+            "relationship": "filho",
+            "description": "Família de ...",
+            "children": [
+              {
+                "id": "branca-02-01",
+                "name": "Filho 02",
+                "relationship": "filho"
+              }
+            ]
+          },
+          {
+            "id": "branca-03",
+            "name": "Filho 03",
+            "relationship": "filho",
+            "description": "Família de ...",
+            "children": [
+              {
+                "id": "branca-03-03",
+                "name": "Filho 03",
+                "relationship": "filho"
+              }
+            ]
+          },
+          {
+            "id": "branca-04",
+            "name": "Filho 04",
+            "relationship": "filho",
+            "description": "Família de ...",
+            "children": [
+              {
+                "id": "branca-04-03",
+                "name": "Filho 04",
+                "relationship": "filho"
+              }
+            ]
+          },
+          {
+            "id": "branca-05",
+            "name": "Filho 05",
+            "relationship": "filho",
+            "description": "Família de ...",
+            "children": [
+              {
+                "id": "branca-05-01",
+                "name": "Filho 05",
+                "relationship": "filho"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "outro-nucleo",
+    "title": "Outro núcleo familiar",
+    "description": "Você poderá criar quantos núcleos familiares desejar.",
+    "members": [
+      {
+        "id": "outro-nucleo-01",
+        "name": "Nucleo familiar",
+        "relationship": "outro",
+        "description": "Raiz de outro grupo familiar.",
+        "children": [
+          {
+            "id": "outro-nucleo-01-01",
+            "name": "Filha 01",
+            "relationship": "filha"
+          },
+          {
+            "id": "outro-nucleo-01-02",
+            "name": "Filho 02",
+            "relationship": "filho"
+          }
+        ]
+      }
+    ]
+  }
+]

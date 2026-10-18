@@ -1,5 +1,8 @@
 export type { Education, EducationLevel, EducationStatus } from './education';
 
+export type { FamilyGroup, FamilyMember, FamilyRelationship } from './family';
+export { relationshipIcons, relationshipLabels } from './family';
+
 export type {
   ProfessionalExperience,
   ProfessionalExperienceType,

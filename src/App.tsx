@@ -7,6 +7,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 import Professional from './pages/Professional/Professional';
 import ProfessionalDetails from './pages/Professional/ProfessionalDetails';
 import ProfessionalLogin from './pages/Professional/ProfessionalLogin';
+import Family from './pages/Family/Family';
 import './App.css';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           </ProtectedRoute>
         }
       />
+      <Route path='/familia' element={<Family />} />
     </Routes>
   );
 }
