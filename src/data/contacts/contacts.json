@@ -1,0 +1,46 @@
+[
+  {
+    "id": "email",
+    "title": "E-mail",
+    "type": "email",
+    "icon": "✉️",
+    "value": "ajsantosbr21@gmail.com",
+    "url": "mailto:ajsantosbr21@gmail.com",
+    "description": "Para propostas, conversas profissionais, parcerias ou mensagens diretas.",
+    "featured": true,
+    "copyable": true
+  },
+  {
+    "id": "github",
+    "title": "GitHub",
+    "type": "github",
+    "icon": "💻",
+    "value": "@angelitasantos",
+    "url": "https://github.com/angelitasantos",
+    "description": "Repositórios, projetos de estudo, aplicações e experiências com tecnologia.",
+    "featured": true,
+    "copyable": false
+  },
+  {
+    "id": "linkedin",
+    "title": "LinkedIn",
+    "type": "linkedin",
+    "icon": "💼",
+    "value": "Meu perfil no LinkedIn",
+    "url": "https://www.linkedin.com/in/angelitasantos/",
+    "description": "Trajetória profissional, experiências, formação e conexões.",
+    "featured": true,
+    "copyable": false
+  },
+  {
+    "id": "literatura",
+    "title": "Espaço literário",
+    "type": "website",
+    "icon": "📚",
+    "value": "Livros e escritos",
+    "url": "https://www.amazon.com.br/stores/author/B08RZBTJ7W?ingress=0&visitId=31e64cbe-6887-40b1-b207-5993f2ecd2c8",
+    "description": "Links para publicações, livros, textos ou futuros espaços de escrita.",
+    "featured": false,
+    "copyable": false
+  }
+]

@@ -1,3 +1,5 @@
+export type { Contact, ContactType } from './contact';
+
 export type { Education, EducationLevel, EducationStatus } from './education';
 
 export type { FamilyGroup, FamilyMember, FamilyRelationship } from './family';
