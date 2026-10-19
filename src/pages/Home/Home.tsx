@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import ProfilePhoto from '../../components/ProfilePhoto/ProfilePhoto';
 import SectionCard from '../../components/SectionCard/SectionCard';
 import { sections } from '../../data/sections';
@@ -10,32 +11,25 @@ function Home() {
   return (
     <main className='home-page'>
       <header className='topbar'>
-        <a className='brand' href='#/' aria-label='Voltar para a página inicial'>
-          AS
-        </a>
+        <Link to='/contato' className='brand' aria-label='Voltar para a página inicial'>AS</Link>
 
         <nav className='topbar-navigation' aria-label='Navegação principal'>
-          <a href='#/projetos'>Projetos</a>
-          <a href='#/literatura'>Literatura</a>
-          <a href='#/contato'>Contato</a>
+          <Link to='/projetos'>Projetos</Link>
+          <Link to='/literatura'>Literatura</Link>
+          <Link to='/contato'>Contato</Link>
         </nav>
       </header>
 
       <section className='hero-section'>
         <div className='hero-photo-area'>
           <ProfilePhoto />
-          <span className='photo-instruction'>
-            Clique na foto para ampliar
-          </span>
+          <span className='photo-instruction'>Clique na foto para ampliar</span>
         </div>
 
         <div className='hero-content'>
           <p className='hero-eyebrow'>Portfólio pessoal</p>
 
-          <h1>
-            Angelita
-            <span>Santos</span>
-          </h1>
+          <h1>Angelita<span>Santos</span></h1>
 
           <p className='hero-description'>
             Administração, tecnologia, criatividade e histórias. Este é um
@@ -43,10 +37,7 @@ function Home() {
             que faz parte de mim.
           </p>
 
-          <a className='primary-button' href='#/projetos'>
-            Conhecer projetos
-            <span aria-hidden='true'>→</span>
-          </a>
+          <Link to='/projetos' className='primary-button'>Conhecer projetos<span aria-hidden='true'>→</span></Link>
         </div>
       </section>
 
