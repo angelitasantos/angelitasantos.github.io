@@ -1,0 +1,82 @@
+[
+  {
+    "id": "escrita-criativa",
+    "title": "Escrita criativa",
+    "category": "criatividade",
+    "icon": "✍️",
+    "shortDescription": "Transformar ideias, sentimentos e histórias em palavras.",
+    "description": "A escrita é um espaço de criação, reflexão e expressão. É onde personagens, cenários, memórias e possibilidades ganham forma por meio das palavras.",
+    "tags": [
+      "Literatura",
+      "Histórias",
+      "Personagens",
+      "Criatividade"
+    ],
+    "accent": "terracotta",
+    "featured": true
+  },
+  {
+    "id": "leitura",
+    "title": "Leitura",
+    "category": "cultura",
+    "icon": "📚",
+    "shortDescription": "Descobrir mundos, ideias e perspectivas por meio dos livros.",
+    "description": "Ler é uma forma de viajar por diferentes universos, aprender com novas perspectivas e encontrar inspiração para a vida e para a escrita.",
+    "tags": [
+      "Romance",
+      "Ficção",
+      "Poesia",
+      "Aprendizado"
+    ],
+    "accent": "plum",
+    "featured": true
+  },
+  {
+    "id": "tecnologia",
+    "title": "Tecnologia e projetos",
+    "category": "tecnologia",
+    "icon": "💻",
+    "shortDescription": "Criar aplicações, aprender ferramentas e resolver problemas.",
+    "description": "Estudar tecnologia e construir projetos pessoais é uma forma de desenvolver novas habilidades, experimentar ideias e transformar aprendizado em soluções práticas.",
+    "tags": [
+      "React",
+      "TypeScript",
+      "Python",
+      "Projetos"
+    ],
+    "accent": "blue",
+    "featured": true
+  },
+  {
+    "id": "aprendizado",
+    "title": "Aprendizado contínuo",
+    "category": "bem-estar",
+    "icon": "🌱",
+    "shortDescription": "Aprender algo novo, desenvolver habilidades e evoluir.",
+    "description": "O aprendizado contínuo faz parte da minha trajetória. Cursos, livros, estudos e experiências são oportunidades para ampliar repertório e construir novos caminhos.",
+    "tags": [
+      "Cursos",
+      "Estudos",
+      "Conhecimento",
+      "Evolução"
+    ],
+    "accent": "sage",
+    "featured": false
+  },
+  {
+    "id": "familia",
+    "title": "Momentos em família",
+    "category": "lazer",
+    "icon": "❤️",
+    "shortDescription": "Valorizar histórias, conexões e momentos compartilhados.",
+    "description": "A família representa memória, afeto e conexão. Reunir histórias e celebrar momentos especiais também é uma forma de preservar lembranças.",
+    "tags": [
+      "Afeto",
+      "Memórias",
+      "Conexões",
+      "Histórias"
+    ],
+    "accent": "gold",
+    "featured": false
+  }
+]

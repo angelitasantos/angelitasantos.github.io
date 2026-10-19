@@ -8,6 +8,7 @@ import Professional from './pages/Professional/Professional';
 import ProfessionalDetails from './pages/Professional/ProfessionalDetails';
 import ProfessionalLogin from './pages/Professional/ProfessionalLogin';
 import Family from './pages/Family/Family';
+import Hobbies from './pages/Hobbies/Hobbies';
 import './App.css';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         }
       />
       <Route path='/familia' element={<Family />} />
+      <Route path='/hobbies' element={<Hobbies />} />
     </Routes>
   );
 }
