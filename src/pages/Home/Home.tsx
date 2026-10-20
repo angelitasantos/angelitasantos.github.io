@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import ProfilePhoto from '../../components/ProfilePhoto/ProfilePhoto';
 import SectionCard from '../../components/SectionCard/SectionCard';
+import SkillsCard from '../../components/SkillsCard/SkillsCard';
 import { sections } from '../../data/sections';
 import useDocumentTitle from '../../hooks/useDocumentTitle';
 import './Home.css';
@@ -40,6 +41,8 @@ function Home() {
           <Link to='/projetos' className='primary-button'>Conhecer projetos<span aria-hidden='true'>→</span></Link>
         </div>
       </section>
+
+      <SkillsCard />
 
       <section className='sections-area' aria-labelledby='sections-title'>
         <div className='section-heading'>
