@@ -7,6 +7,8 @@ export { relationshipIcons, relationshipLabels } from './family';
 
 export type { Hobby, HobbyAccent, HobbyCategory } from './hobby';
 
+export type { Book, BookGenre, BookLinks, BookStatus } from './literature';
+
 export type {
   ProfessionalExperience,
   ProfessionalExperienceType,

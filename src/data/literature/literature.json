@@ -1,0 +1,82 @@
+[
+  {
+    "id": "livro-001",
+    "title": "O perigo muda de endereço",
+    "subtitle": "Vidas Cruzadas Vol 01",
+    "cover": "/books/livro-vidascruzadas01.jpg",
+    "genre": "romance",
+    "publicationYear": 2019,
+    "synopsis": "Um tiroteio na pequena e tranquila cidade de Cananeia, no litoral paulista, muda completamente a vida de Fabiana, uma professora de Geografia da escola pública da cidade. Nádia é uma jornalista de um jornal da capital de Sergipe e chega a Cananeia aflita por notícias sobre os seus amigos que ficaram feridos no tiroteio. Elas descobrirão um grande esquema que envolve políticos, policiais e autoridades públicas para manter uma organização criminosa e isso colocará a vida delas em perigo.",
+    "status": "publicado",
+    "featured": true,
+    "links": {
+      "amazon": "https://www.amazon.com.br/dp/B082GGNZZH",
+      "wattpad": "",
+      "goodreads": ""
+    }
+  },
+  {
+    "id": "livro-02",
+    "title": "Edifício Litera",
+    "subtitle": "Antologia do Coletivo Litera",
+    "cover": "/books/livro-antologia01.jpg",
+    "genre": "antologia",
+    "publicationYear": 2021,
+    "synopsis": "O Edifício Litera é cenário para todo tipo de acontecimento. Com um porteiro cujo nome verdadeiro ninguém lembra, a típica vizinha fofoqueira e sete andares ocupados por diferentes tipos de pessoas, história é o que não falta.",
+    "status": "publicado",
+    "featured": true,
+    "links": {
+      "amazon": "https://www.amazon.com.br/dp/B082GGNZZH",
+      "wattpad": "",
+      "goodreads": ""
+    }
+  },
+  {
+    "id": "livro-03",
+    "title": "Doze dias doze",
+    "subtitle": "Antologia do Coletivo Litera",
+    "cover": "/books/livro-antologia02.jpg",
+    "genre": "antologia",
+    "publicationYear": 2024,
+    "synopsis": "O Dia dos Namorados é palco para os mais variados eventos no Edifício Litera, o prédio com a maior diversidade por metro quadrado da literatura. Entre deuses, clichês, videntes, barracos, bebedeiras, paixões à primeira vista e entregas erradas, passando por DRs, anomalias temporais, corações solitários, vampiras vivendo em segredo e uma nude acidental no grupo do condomínio, os sentimentos estão aflorados e tudo pode acontecer durante as comemorações dessa data.",
+    "status": "publicado",
+    "featured": true,
+    "links": {
+      "amazon": "https://www.amazon.com.br/dp/B0D6M3XF3L",
+      "wattpad": "",
+      "goodreads": ""
+    }
+  },
+  {
+    "id": "livro-04",
+    "title": "Nove gritos",
+    "subtitle": "Antologia do Coletivo Litera",
+    "cover": "/books/livro-antologia03.jpg",
+    "genre": "antologia",
+    "publicationYear": 2025,
+    "synopsis": "O sobrenatural e o oculto sempre habitaram o Edifício Litera, mas neste Dia das Bruxas, seus moradores levam a pegada de terror (ou seria terrir?) para outro nível. Um assassino sanguinário de slasher faz múltiplas vítimas no prédio, e isso é só o começo dessa antologia de halloween que comemora a ocasião das mais diversas formas.",
+    "status": "publicado",
+    "featured": true,
+    "links": {
+      "amazon": "https://www.amazon.com.br/dp/B0FY7JY5PR",
+      "wattpad": "",
+      "goodreads": ""
+    }
+  },
+  {
+    "id": "livro-05",
+    "title": "Tão correto e tão bonito",
+    "subtitle": "Spin off Vidas Cruzadas",
+    "cover": "/books/conto-taocorreto-taobonito.jpg",
+    "genre": "conto",
+    "publicationYear": 2020,
+    "synopsis": "Sentada na grama embaixo de uma sombra de árvore, Nádia observa sua nova casa do outro lado da rua enquanto seus pais arrumam as coisas que acabaram de chegar de Itabaiana. Ela não imagina como essa mudança de cidade trará fortes emoções para eles.",
+    "status": "publicado",
+    "featured": true,
+    "links": {
+      "amazon": "",
+      "wattpad": "https://www.wattpad.com/story/242473826-t%C3%A3o-correto-e-t%C3%A3o-bonito-conto",
+      "goodreads": ""
+    }
+  }
+]
