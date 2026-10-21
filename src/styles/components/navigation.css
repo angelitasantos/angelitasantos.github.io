@@ -7,7 +7,7 @@
 
 .brand {
   display: grid;
-  width: 2.875rem;
+  width: 16px;
   aspect-ratio: 1;
   place-items: center;
   border: 1px solid var(--color-text-primary);

@@ -15,7 +15,7 @@
 }
 
 .filter-button {
-  min-height: 2.25rem;
+  min-height: 36px;
   padding: 0.5rem 0.75rem;
   color: var(--color-text-secondary);
   border: 1px solid var(--color-border);

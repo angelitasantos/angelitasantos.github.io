@@ -1,5 +1,5 @@
 .page {
-  width: min(var(--page-width, var(--container-default)), calc(100% - 3rem));
+  width: min(var(--page-width, var(--container-default)), calc(100% - 48px));
   min-height: 100vh;
   margin-inline: auto;
 }
@@ -9,7 +9,7 @@
 }
 
 .page-header {
-  max-width: 50rem;
+  max-width: 800px;
   padding-block: 2.375rem 3rem;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .page-introduction {
-  max-width: 42.1875rem;
+  max-width: 675px;
   margin: 1.625rem 0 0;
   color: var(--color-text-secondary);
   font-size: 1rem;
@@ -61,7 +61,7 @@
 }
 
 .section-heading > p {
-  max-width: 22.5rem;
+  max-width: 360px;
   margin: 0;
   color: var(--color-text-secondary);
   font-size: 0.9375rem;
@@ -76,7 +76,7 @@
   .page {
     width: min(
       var(--page-width, var(--container-default)),
-      calc(100% - 2rem)
+      calc(100% - 32px)
     );
   }
 
