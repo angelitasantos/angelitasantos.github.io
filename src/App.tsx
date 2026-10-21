@@ -11,7 +11,6 @@ import Family from './pages/Family/Family';
 import Hobbies from './pages/Hobbies/Hobbies';
 import Contact from './pages/Contact/Contact';
 import Literature from './pages/Literature/Literature';
-import './App.css';
 
 function App() {
   return (

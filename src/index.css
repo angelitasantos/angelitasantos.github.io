@@ -1,49 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
-:root {
-  --background: #f8f5ef;
-  --surface: #fffdf9;
-  --text-primary: #21302c;
-  --text-secondary: #61706b;
-  --accent: #b75038;
-  --accent-dark: #8f3828;
-  --green: #5f7568;
-  --border: #ded8ce;
-  --shadow: 0 18px 45px rgba(43, 54, 48, 0.1);
-  --radius-lg: 28px;
-  --radius-md: 18px;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  color: var(--text-primary);
-  background: var(--background);
-}
+@import './styles/tokens.css';
+@import './styles/base.css';
+@import './styles/layout.css';
 
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  min-width: 300px;
-  min-height: 100vh;
-  margin: 0;
-  background:
-    radial-gradient(circle at top left, rgba(183, 80, 56, 0.1), transparent 26rem),
-    var(--background);
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-button,
-a {
-  -webkit-tap-highlight-color: transparent;
-}
-
-button {
-  font: inherit;
-}
+@import './styles/components/navigation.css';
+@import './styles/components/actions.css';
+@import './styles/components/cards.css';
+@import './styles/components/badges.css';
+@import './styles/components/tags.css';
+@import './styles/components/summaries.css';
+@import './styles/components/filters.css';
+@import './styles/components/feedback.css';

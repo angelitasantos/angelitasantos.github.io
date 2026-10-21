@@ -52,4 +52,19 @@
   /* Larguras */
   --container-default: 1050px;
   --container-wide: 1180px;
+
+  /*
+    Aliases temporários:
+    permitem migrar os CSS existentes aos poucos, sem quebrar estilos.
+    Quando toda a aplicação estiver refatorada, estes aliases podem ser removidos.
+  */
+  --background: var(--color-background);
+  --surface: var(--color-surface);
+  --text-primary: var(--color-text-primary);
+  --text-secondary: var(--color-text-secondary);
+  --accent: var(--color-accent);
+  --accent-dark: var(--color-accent-dark);
+  --green: var(--color-green);
+  --border: var(--color-border);
+  --shadow: var(--shadow-card);
 }
