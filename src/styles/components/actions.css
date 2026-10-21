@@ -1,0 +1,102 @@
+.button,
+.primary-button {
+  display: inline-flex;
+  gap: var(--space-2);
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0.875rem 1.25rem;
+  color: var(--color-surface);
+  border-radius: var(--radius-pill);
+  background: var(--color-text-primary);
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.button:hover,
+.primary-button:hover {
+  background: var(--color-accent);
+  transform: translateY(-0.125rem);
+}
+
+.button--full {
+  width: 100%;
+}
+
+.button--outline {
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border);
+  background: transparent;
+}
+
+.button--outline:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+  background: transparent;
+}
+
+.text-action {
+  display: inline-flex;
+  gap: 0.4375rem;
+  align-items: center;
+  padding: 0;
+  color: var(--color-text-primary);
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.75rem;
+  font-weight: 800;
+  transition: color 0.2s ease;
+}
+
+.text-action:hover {
+  color: var(--color-accent);
+}
+
+.text-action--accent {
+  color: var(--color-accent);
+}
+
+.text-action--accent:hover {
+  color: var(--color-accent-dark);
+}
+
+.icon-button {
+  display: grid;
+  width: 2.75rem;
+  aspect-ratio: 1;
+  place-items: center;
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.6rem;
+  line-height: 1;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.icon-button:hover {
+  color: var(--color-surface);
+  border-color: var(--color-green);
+  background: var(--color-green);
+}
+
+.eyebrow,
+.hero-eyebrow {
+  margin: 0 0 0.8125rem;
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}

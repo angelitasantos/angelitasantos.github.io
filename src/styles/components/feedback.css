@@ -1,0 +1,45 @@
+.empty-state {
+  padding: 4.6875rem 1.25rem;
+  text-align: center;
+}
+
+.empty-state > span {
+  font-size: 2rem;
+}
+
+.empty-state h2 {
+  margin: 0.875rem 0 0.5rem;
+  font-family: var(--font-display);
+  font-size: 2rem;
+}
+
+.empty-state p {
+  margin: 0;
+  color: var(--color-text-secondary);
+}
+
+.notice {
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-start;
+  padding: var(--space-4) var(--space-5);
+  border-left: 0.25rem solid currentColor;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.notice--green {
+  color: var(--color-green);
+  background: rgb(95 117 104 / 10%);
+}
+
+.notice--accent {
+  color: var(--color-accent);
+  background: rgb(183 80 56 / 10%);
+}
+
+.notice p {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 0.82rem;
+  line-height: 1.65;
+}
