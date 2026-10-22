@@ -1,20 +1,16 @@
 import type { Hobby } from '../../types';
+import { HOBBY_CATEGORY_LABELS } from '../../constants/hobbies';
 
 interface HobbySpotlightProps {
   hobby: Hobby;
 }
 
-const categoryLabels: Record<Hobby['category'], string> = {
-  criatividade: 'Criatividade',
-  cultura: 'Cultura',
-  tecnologia: 'Tecnologia',
-  'bem-estar': 'Bem-estar',
-  lazer: 'Lazer',
-};
-
 function HobbySpotlight({ hobby }: HobbySpotlightProps) {
   return (
-    <aside className={`hobby-spotlight hobby-spotlight-${hobby.accent}`}>
+    <aside
+      className={`card hobby-spotlight hobby-spotlight-${hobby.accent}`}
+      aria-labelledby='hobby-spotlight-title'
+    >
       <div className='hobby-spotlight-visual'>
         {hobby.image ? (
           <img src={hobby.image} alt={`Representação de ${hobby.title}`} />
@@ -25,16 +21,26 @@ function HobbySpotlight({ hobby }: HobbySpotlightProps) {
 
       <div className='hobby-spotlight-content'>
         <div className='hobby-spotlight-top'>
-          <span className='hobby-category'>{categoryLabels[hobby.category]}</span>
-          {hobby.featured && (<span className='hobby-featured'>Em destaque</span>)}
+          <span className='badge badge--level'>
+            {HOBBY_CATEGORY_LABELS[hobby.category]}
+          </span>
+
+          {hobby.featured && (
+            <span className='badge badge--accent'>Em destaque</span>
+          )}
         </div>
 
-        <h2>{hobby.title}</h2>
+        <h2 id='hobby-spotlight-title'>{hobby.title}</h2>
+
         <p>{hobby.description}</p>
 
-        <div className='hobby-tags' aria-label='Temas relacionados'>
-          {hobby.tags.map((tag) => (<span key={tag} className='hobby-tag'>{tag}</span>))}
-        </div>
+        <ul className='tag-list hobby-tags' aria-label='Temas relacionados'>
+          {hobby.tags.map((tag) => (
+            <li key={tag} className='tag tag--surface'>
+              {tag}
+            </li>
+          ))}
+        </ul>
       </div>
     </aside>
   );

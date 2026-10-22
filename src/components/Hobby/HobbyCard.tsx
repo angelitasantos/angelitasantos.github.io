@@ -9,18 +9,30 @@ interface HobbyCardProps {
 function HobbyCard({ hobby, isActive, onSelect }: HobbyCardProps) {
   return (
     <button
-      className={`hobby-card hobby-card-${hobby.accent} ${
+      className={`card hobby-card hobby-card-${hobby.accent} ${
         isActive ? 'hobby-card-active' : ''
       }`}
-      type='button' onClick={() => onSelect(hobby)} aria-pressed={isActive}>
-      <span className='hobby-card-icon' aria-hidden='true'>{hobby.icon}</span>
+      type='button'
+      aria-pressed={isActive}
+      aria-label={`${
+        isActive ? 'Hobby selecionado' : 'Selecionar hobby'
+      }: ${hobby.title}`}
+      onClick={() => onSelect(hobby)}
+    >
+      <span className='hobby-card-icon' aria-hidden='true'>
+        {hobby.icon}
+      </span>
 
-      <div>
-        <h2>{hobby.title}</h2>
-        <p>{hobby.shortDescription}</p>
-      </div>
+      <span className='hobby-card-content'>
+        <span className='hobby-card-title'>{hobby.title}</span>
+        <span className='hobby-card-description'>
+          {hobby.shortDescription}
+        </span>
+      </span>
 
-      <span className='hobby-card-arrow' aria-hidden='true'>→</span>
+      <span className='hobby-card-arrow' aria-hidden='true'>
+        →
+      </span>
     </button>
   );
 }
