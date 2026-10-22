@@ -1,24 +1,14 @@
 import type { Education } from '../../types';
+import {
+  EDUCATION_LEVEL_LABELS,
+  EDUCATION_MONTHS,
+  EDUCATION_STATUS_CLASS_NAMES,
+  EDUCATION_STATUS_LABELS,
+} from '../../constants';
 
 interface EducationTimelineItemProps {
   education: Education;
 }
-
-const statusLabels: Record<Education['status'], string> = {
-  concluido: 'Concluído',
-  'em-andamento': 'Em andamento',
-  pausado: 'Pausado',
-  planejado: 'Planejado',
-};
-
-const levelLabels: Record<Education['level'], string> = {
-  tecnico: 'Técnico',
-  graduacao: 'Graduação',
-  'pos-graduacao': 'Pós-graduação',
-  curso: 'Curso',
-  certificacao: 'Certificação',
-  workshop: 'Workshop',
-};
 
 function formatMonthYear(date?: string): string {
   if (!date) {
@@ -27,23 +17,13 @@ function formatMonthYear(date?: string): string {
 
   const [year, month] = date.split('-');
   const monthIndex = Number(month) - 1;
+  const monthLabel = EDUCATION_MONTHS[monthIndex];
 
-  const months = [
-    'jan',
-    'fev',
-    'mar',
-    'abr',
-    'mai',
-    'jun',
-    'jul',
-    'ago',
-    'set',
-    'out',
-    'nov',
-    'dez',
-  ];
+  if (!year || !monthLabel) {
+    return '';
+  }
 
-  return `${months[monthIndex]}/${year}`;
+  return `${monthLabel}/${year}`;
 }
 
 function formatPeriod(education: Education): string {
@@ -63,6 +43,8 @@ function formatPeriod(education: Education): string {
 }
 
 function EducationTimelineItem({ education }: EducationTimelineItemProps) {
+  const statusClassName = EDUCATION_STATUS_CLASS_NAMES[education.status];
+
   return (
     <article className='education-timeline-item'>
       <div className='education-period'>
@@ -73,16 +55,14 @@ function EducationTimelineItem({ education }: EducationTimelineItemProps) {
         <span />
       </div>
 
-      <div className='education-card'>
+      <div className='card card--interactive education-card'>
         <div className='education-card-header'>
-          <span className='education-level'>
-            {levelLabels[education.level]}
+          <span className='badge badge--level'>
+            {EDUCATION_LEVEL_LABELS[education.level]}
           </span>
 
-          <span
-            className={`education-status education-status-${education.status}`}
-          >
-            {statusLabels[education.status]}
+          <span className={`badge ${statusClassName}`}>
+            {EDUCATION_STATUS_LABELS[education.status]}
           </span>
         </div>
 
@@ -95,16 +75,13 @@ function EducationTimelineItem({ education }: EducationTimelineItemProps) {
         )}
 
         {education.skills && education.skills.length > 0 && (
-          <div
-            className='education-skills'
-            aria-label='Competências desenvolvidas'
-          >
+          <ul className='tag-list' aria-label='Competências desenvolvidas'>
             {education.skills.map((skill) => (
-              <span key={skill} className='education-skill'>
+              <li key={skill} className='tag'>
                 {skill}
-              </span>
+              </li>
             ))}
-          </div>
+          </ul>
         )}
 
         {education.certificateUrl && (
@@ -113,6 +90,7 @@ function EducationTimelineItem({ education }: EducationTimelineItemProps) {
             href={education.certificateUrl}
             target='_blank'
             rel='noreferrer'
+            aria-label={`Ver certificado de ${education.course}. Abre em nova aba.`}
           >
             Ver certificado <span aria-hidden='true'>↗</span>
           </a>

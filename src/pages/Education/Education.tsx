@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import EducationTimelineItem from '../../components/Education/EducationTimelineItem';
+import { EDUCATION_FILTERS, EDUCATION_PAGE_TITLE } from '../../constants';
 import { education } from '../../data/education/education';
 import type { EducationLevel } from '../../types';
 import useDocumentTitle from '../../hooks/useDocumentTitle';
@@ -8,23 +9,8 @@ import './Education.css';
 
 type EducationFilter = 'todos' | EducationLevel;
 
-interface FilterOption {
-  value: EducationFilter;
-  label: string;
-}
-
-const filters: FilterOption[] = [
-  { value: 'todos', label: 'Todos' },
-  { value: 'tecnico', label: 'Técnico' },
-  { value: 'graduacao', label: 'Graduação' },
-  { value: 'pos-graduacao', label: 'Pós-graduação' },
-  { value: 'curso', label: 'Cursos' },
-  { value: 'certificacao', label: 'Certificações' },
-  { value: 'workshop', label: 'Workshops' },
-];
-
 function Education() {
-  useDocumentTitle('Educação | Angelita Santos');
+  useDocumentTitle(EDUCATION_PAGE_TITLE);
 
   const [selectedFilter, setSelectedFilter] = useState<EducationFilter>('todos');
 
@@ -36,12 +22,23 @@ function Education() {
     return item.level === selectedFilter;
   });
 
-  const completedCount = education.filter((item) => item.status === 'concluido').length;
-  const inProgressCount = education.filter((item) => item.status === 'em-andamento').length;
+  const completedCount = education.filter(
+    (item) => item.status === 'concluido',
+  ).length;
+
+  const inProgressCount = education.filter(
+    (item) => item.status === 'em-andamento',
+  ).length;
 
   return (
-    <main className='education-page'>
-      <header className='education-header'>
+    <main className='page education-page'>
+      <p className='sr-only' aria-live='polite' role='status'>
+        {filteredEducation.length} item
+        {filteredEducation.length === 1 ? '' : 's'} encontrado
+        {filteredEducation.length === 1 ? '' : 's'}.
+      </p>
+
+      <header className='page-header education-header'>
         <Link className='back-link' to='/'>
           <span aria-hidden='true'>←</span>
           Voltar ao início
@@ -49,30 +46,30 @@ function Education() {
 
         <p className='hero-eyebrow'>Trajetória de aprendizado</p>
 
-        <h1>
+        <h1 className='page-title'>
           Experiência
-          <span>acadêmica</span>
+          <span className='page-title__accent'>acadêmica</span>
         </h1>
 
-        <p className='education-introduction'>
+        <p className='page-introduction'>
           Minha trajetória reúne formação em administração, gestão de projetos e
           estudos contínuos em tecnologia, desenvolvimento de sistemas e análise
           de dados.
         </p>
       </header>
 
-      <section className='education-summary' aria-label='Resumo acadêmico'>
-        <div className='education-summary-card'>
+      <section className='summary-grid' aria-label='Resumo acadêmico'>
+        <div className='summary-card'>
           <strong>{education.length}</strong>
           <span>Formações e cursos</span>
         </div>
 
-        <div className='education-summary-card'>
+        <div className='summary-card'>
           <strong>{completedCount}</strong>
           <span>Concluídos</span>
         </div>
 
-        <div className='education-summary-card'>
+        <div className='summary-card'>
           <strong>{inProgressCount}</strong>
           <span>Em andamento</span>
         </div>
@@ -84,19 +81,24 @@ function Education() {
       >
         <p className='filter-label'>Filtrar por categoria</p>
 
-        <div className='education-filters'>
-          {filters.map((filter) => (
-            <button
-              key={filter.value}
-              className={`filter-button ${
-                selectedFilter === filter.value ? 'filter-button-active' : ''
-              }`}
-              type='button'
-              onClick={() => setSelectedFilter(filter.value)}
-            >
-              {filter.label}
-            </button>
-          ))}
+        <div className='filter-list'>
+          {EDUCATION_FILTERS.map((filter) => {
+            const isSelected = selectedFilter === filter.value;
+
+            return (
+              <button
+                key={filter.value}
+                className={`filter-button ${
+                  isSelected ? 'filter-button-active' : ''
+                }`}
+                type='button'
+                aria-pressed={isSelected}
+                onClick={() => setSelectedFilter(filter.value)}
+              >
+                {filter.label}
+              </button>
+            );
+          })}
         </div>
       </section>
 
