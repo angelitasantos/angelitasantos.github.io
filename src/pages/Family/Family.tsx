@@ -28,9 +28,11 @@ function getGenerationDepth(member: FamilyMember): number {
 }
 
 function Family() {
-  useDocumentTitle('Familia | Angelita Santos');
+  useDocumentTitle('Família | Angelita Santos');
 
-  const [selectedMember, setSelectedMember] = useState<FamilyMember | null>(null);
+  const [selectedMember, setSelectedMember] = useState<FamilyMember | null>(
+    null,
+  );
 
   const totalMembers = familyGroups.reduce((total, group) => {
     const groupMembers = group.members.reduce(
@@ -48,22 +50,31 @@ function Family() {
   );
 
   return (
-    <main className='family-page'>
-      <header className='family-header'>
-        <Link className='back-link' to='/'><span aria-hidden='true'>←</span>Voltar ao início</Link>
+    <main className='page family-page'>
+      <header className='page-header family-header'>
+        <Link className='back-link' to='/'>
+          <span aria-hidden='true'>←</span>
+          Voltar ao início
+        </Link>
 
         <p className='hero-eyebrow'>Histórias e conexões</p>
 
-        <h1>Laços de<span>família</span></h1>
+        <h1 className='page-title'>
+          Laços de
+          <span className='page-title__accent'>família</span>
+        </h1>
 
-        <p className='family-introduction'>
+        <p className='page-introduction'>
           Uma árvore familiar organizada por núcleos e gerações. Cada card
           representa uma pessoa ou casal, e os descendentes podem ser expandidos
           ou recolhidos conforme necessário.
         </p>
       </header>
 
-      <section className='family-privacy-note'>
+      <section
+        className='notice notice--green family-privacy-note'
+        aria-label='Aviso de privacidade'
+      >
         <span aria-hidden='true'>🛡️</span>
 
         <p>
@@ -73,18 +84,18 @@ function Family() {
         </p>
       </section>
 
-      <section className='family-summary' aria-label='Resumo familiar'>
-        <article className='family-summary-card'>
+      <section className='summary-grid' aria-label='Resumo familiar'>
+        <article className='summary-card'>
           <strong>{familyGroups.length}</strong>
           <span>Núcleos familiares</span>
         </article>
 
-        <article className='family-summary-card'>
+        <article className='summary-card'>
           <strong>{totalMembers}</strong>
           <span>Membros cadastrados</span>
         </article>
 
-        <article className='family-summary-card'>
+        <article className='summary-card'>
           <strong>{totalGenerations}</strong>
           <span>Gerações representadas</span>
         </article>
@@ -92,7 +103,7 @@ function Family() {
 
       <section className='family-groups' aria-label='Árvore familiar'>
         {familyGroups.map((group) => (
-          <article key={group.id} className='family-group'>
+          <article key={group.id} className='card family-group'>
             <header className='family-group-header'>
               <div>
                 <p className='hero-eyebrow'>Núcleo familiar</p>
@@ -103,13 +114,24 @@ function Family() {
             </header>
 
             <ul className='family-tree-root'>
-              {group.members.map((member) => (<FamilyTreeNode key={member.id} member={member} onSelectMember={setSelectedMember} />))}
+              {group.members.map((member) => (
+                <FamilyTreeNode
+                  key={member.id}
+                  member={member}
+                  onSelectMember={setSelectedMember}
+                />
+              ))}
             </ul>
           </article>
         ))}
       </section>
 
-      {selectedMember && (<FamilyMemberModal member={selectedMember} onClose={() => setSelectedMember(null)} />)}
+      {selectedMember && (
+        <FamilyMemberModal
+          member={selectedMember}
+          onClose={() => setSelectedMember(null)}
+        />
+      )}
     </main>
   );
 }
