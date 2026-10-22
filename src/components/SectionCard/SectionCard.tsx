@@ -8,7 +8,10 @@ interface SectionCardProps {
 
 function SectionCard({ section }: SectionCardProps) {
   return (
-    <Link className='section-card' to={section.path}>
+    <Link
+      className='card card--interactive section-card'
+      to={section.path}
+    >
       <div className='section-card-header'>
         <span className='section-card-icon' aria-hidden='true'>
           {section.icon}
@@ -18,6 +21,7 @@ function SectionCard({ section }: SectionCardProps) {
           <span
             className='section-card-lock'
             title='Possui área com acesso demonstrativo'
+            aria-label='Possui área com acesso demonstrativo'
           >
             🔒
           </span>
@@ -25,10 +29,12 @@ function SectionCard({ section }: SectionCardProps) {
       </div>
 
       <h2>{section.title}</h2>
+
       <p>{section.description}</p>
 
-      <span className='section-card-link'>
-        Mais informações <span aria-hidden='true'>→</span>
+      <span className='text-action text-action--accent section-card-link'>
+        Mais informações
+        <span aria-hidden='true'>→</span>
       </span>
     </Link>
   );

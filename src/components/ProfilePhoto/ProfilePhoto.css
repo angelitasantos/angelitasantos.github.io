@@ -2,16 +2,18 @@
   width: min(320px, 70vw);
   padding: 0;
   overflow: hidden;
-  cursor: zoom-in;
-  border: 10px solid var(--surface);
+  border: 0.625rem solid var(--color-surface);
   border-radius: 50%;
-  box-shadow: var(--shadow);
   background: transparent;
+  box-shadow: var(--shadow-card);
+  cursor: zoom-in;
   transition: transform 0.25s ease;
 }
 
-.profile-photo-button:hover {
-  transform: translateY(-6px) rotate(-2deg);
+@media (hover: hover) {
+  .profile-photo-button:hover {
+    transform: translateY(-0.375rem) rotate(-2deg);
+  }
 }
 
 .profile-photo {
@@ -22,18 +24,18 @@
 }
 
 .photo-instruction {
-  color: var(--text-secondary);
+  color: var(--color-text-secondary);
   font-size: 0.78rem;
 }
 
 .image-modal {
   position: fixed;
-  z-index: 50;
+  z-index: 1000;
   inset: 0;
   display: grid;
   place-items: center;
-  padding: 24px;
-  background: rgba(20, 28, 25, 0.86);
+  padding: 1.5rem;
+  background: rgb(20 28 25 / 86%);
   cursor: zoom-out;
 }
 
@@ -48,36 +50,33 @@
   width: 100%;
   max-height: 84vh;
   object-fit: contain;
-  border: 8px solid var(--surface);
+  border: 0.5rem solid var(--color-surface);
   border-radius: var(--radius-md);
 }
 
 .close-modal-button {
   position: absolute;
   z-index: 2;
-  top: -16px;
-  right: -16px;
-  display: grid;
-  width: 43px;
-  height: 43px;
-  place-items: center;
-  cursor: pointer;
-  color: var(--surface);
+  top: -1rem;
+  right: -1rem;
+  color: var(--color-surface);
   border: 0;
-  border-radius: 50%;
-  background: var(--accent);
-  font-size: 2rem;
-  line-height: 1;
+  background: var(--color-accent);
+}
+
+.close-modal-button:hover {
+  color: var(--color-surface);
+  background: var(--color-accent-dark);
 }
 
 @media (max-width: 640px) {
   .profile-photo-button {
     width: min(235px, 64vw);
-    border-width: 7px;
+    border-width: 0.4375rem;
   }
 
   .close-modal-button {
-    top: -11px;
-    right: -7px;
+    top: -0.6875rem;
+    right: -0.4375rem;
   }
 }
